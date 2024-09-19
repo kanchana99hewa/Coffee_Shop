@@ -22,7 +22,7 @@ const Menu = [
 const Navbar = () => {
   return (
     <>
-      <div className="text-white bg-black shadow-md bg-gradient-to-r from-secondary to-secondary/90">
+      <div className="text-yellow-600 bg-black shadow-md bg-gradient-to-r from-black to-black/90" >
         <div className="container py-2">
           <div className="flex items-center justify-between">
             {/* Logo section */}
