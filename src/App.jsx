@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import MainSection from './components/Main/MainSection';
+import Services from './components/Services/Services';
 
 const App = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const App = () => {
     <div className="overflow-x-hidden duration-200 bg-white dark:bg-gray-900 dark:text-white">
       <Navbar />
       <MainSection/>
+      <Services />
     </div>
   );
 };
