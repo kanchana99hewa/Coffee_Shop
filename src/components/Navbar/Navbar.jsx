@@ -28,14 +28,12 @@ const Navbar = () => {
           
           <div className="flex items-center justify-between">
             {/* Logo section */}
-            <div data-aos="fade-down" data-aos-once="true" className="flex items-center ml-6"> {/* Adjusted positioning */}
+            <div  className="flex items-center ml-16 ">
               <img src={Logo} alt="Logo" className="w-14" />
-              <a
-                href="#"
-                className="ml-2 text-2xl font-bold tracking-wider sm:text-3xl moon-dance-font" 
+              <div className="ml-2 text-2xl font-bold tracking-wider sm:text-3xl moon-dance-font" 
               >
                 Coffee Cafe
-              </a>
+              </div>
             </div>
 
             {/* Link section */}
@@ -50,7 +48,7 @@ const Navbar = () => {
                   <li key={menu.id}>
                     <a
                       href={menu.link}
-                      className="inline-block px-4 py-4 text-xl duration-200 text-white/70 hover:text-white"
+                      className="inline-block px-4 py-4 text-xl text-white duration-200 hover:text-white/70"
                     >
                       {menu.name}
                     </a>
@@ -64,7 +62,7 @@ const Navbar = () => {
             </div>
           </div>
           {/* Centered yellow line */}
-          <div className="w-5/6 h-1 mx-auto my-4 bg-yellow-600" style={{ marginLeft: '10%' }}></div>
+          <div className="w-full h-1 my-4 bg-yellow-600" style={{ marginLeft: '4%' }}></div>
 
 
         </div>

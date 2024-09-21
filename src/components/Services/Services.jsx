@@ -1,5 +1,5 @@
-
 import Img2 from "../../assets/coffee2.png";
+
 const ServicesData = [
   {
     id: 1,
@@ -26,15 +26,16 @@ const ServicesData = [
     aosDelay: "500",
   },
 ];
+
 const Services = () => {
   return (
     <>
       <span id="services"></span>
-      <div className="py-10">
+      <div className="py-10 bg-white"> {/* Added gray background here */}
         <div className="container">
           {/* Heading section  */}
           <div className="mb-20 text-center">
-            <h1 className="text-4xl font-bold text-gray-800 font-cursive">
+            <h1 className="text-4xl font-bold text-black font-cursive"> {/* Changed text color to black */}
               Best Coffee For You
             </h1>
           </div>
@@ -43,9 +44,10 @@ const Services = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-5 place-items-center">
             {ServicesData.map((service) => (
               <div
+                key={service.id}
                 data-aos="fade-up"
                 data-aos-delay={service.aosDelay}
-                className="rounded-2xl bg-white hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]"
+                className="rounded-2xl bg-yellow-700 hover:bg-gray-600 hover:text-white relative shadow-xl duration-high group max-w-[300px]"
               >
                 <div className="h-[122px]">
                   <img
