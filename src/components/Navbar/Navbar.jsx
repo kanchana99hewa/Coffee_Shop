@@ -1,7 +1,6 @@
-import React from "react";
 import Logo from "../../assets/website/coffee_logo.png";
 import { FaCoffee } from "react-icons/fa";
-import './Navbar.css'; // Make sure to create this file for additional styles
+import './Navbar.css'; 
 
 const Menu = [
   {
@@ -24,17 +23,17 @@ const Menu = [
 const Navbar = () => {
   return (
     <>
-      <div className="text-yellow-600 bg-black shadow-md bg-gradient-to-r from-black to-black/90">
+      <div className="mt-4 text-yellow-600 bg-black shadow-md bg-gradient-to-r from-black to-black/90">
         <div className="container py-2">
           
           <div className="flex items-center justify-between">
             {/* Logo section */}
-            <div data-aos="fade-down" data-aos-once="true">
+            <div data-aos="fade-down" data-aos-once="true" className="flex items-center ml-6"> {/* Adjusted positioning */}
+              <img src={Logo} alt="Logo" className="w-14" />
               <a
                 href="#"
-                className="flex items-center justify-center gap-2 ml-4 text-2xl font-bold tracking-wider sm:text-3xl moon-dance-font" // Added ml-4 for right alignment
+                className="ml-2 text-2xl font-bold tracking-wider sm:text-3xl moon-dance-font" 
               >
-                <img src={Logo} alt="Logo" className="w-14" />
                 Coffee Cafe
               </a>
             </div>
@@ -64,8 +63,10 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          {/* Yellow line */}
-          <div className="h-1 mb-2 bg-yellow-600"></div>
+          {/* Centered yellow line */}
+          <div className="w-5/6 h-1 mx-auto my-4 bg-yellow-600" style={{ marginLeft: '10%' }}></div>
+
+
         </div>
       </div>
     </>
