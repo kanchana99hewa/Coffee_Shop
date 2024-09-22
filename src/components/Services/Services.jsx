@@ -47,11 +47,11 @@ const Services = () => {
                 key={service.id}
                 data-aos="fade-up"
                 data-aos-delay={service.aosDelay}
-                className="rounded-2xl bg-yellow-700 hover:bg-gray-600 hover:text-white relative shadow-xl duration-high group max-w-[300px]"
+                className="rounded-2xl bg-black text-yellow-600  hover:bg-yellow-600 hover:text-black relative shadow-xl duration-high group max-w-[300px]"
               >
                 <div className="h-[122px]">
                   <img
-                    src={service.img}
+                    src="/cofe2.png"
                     alt=""
                     className="max-w-[200px] block mx-auto transform -translate-y-14
                   group-hover:scale-105 group-hover:rotate-6 duration-300"
@@ -60,7 +60,7 @@ const Services = () => {
                 <div className="p-4 text-center">
                   <div className="w-full "></div>
                   <h1 className="text-xl font-bold">{service.name}</h1>
-                  <p className="text-sm text-gray-500 group-hover:text-white duration-high line-clamp-2">
+                  <p className="text-sm text-white group-hover:text-white duration-high line-clamp-2">
                     {service.description}
                   </p>
                 </div>
