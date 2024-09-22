@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import MainSection from './components/Main/MainSection';
 import Services from './components/Services/Services';
+import Banner from './components/Banner/Banner';
 
 const App = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const App = () => {
       <Navbar />
       <MainSection/>
       <Services />
+      <Banner/>
     </div>
   );
 };
