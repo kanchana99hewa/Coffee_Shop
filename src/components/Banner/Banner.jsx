@@ -2,11 +2,11 @@ import BannerImg from "../../assets/coffee-white.png";
 import { GrSecure } from "react-icons/gr";
 import { IoFastFood } from "react-icons/io5";
 import { GiFoodTruck } from "react-icons/gi";
-import BgImg from "../../assets/website/coffee-texture.jpg";
+
 
 const bgImage = {
-  backgroundColor: "#000000", // Ensuring black background is applied
-  backgroundImage: `url(${BgImg})`,
+  backgroundColor: "#000000", 
+
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
