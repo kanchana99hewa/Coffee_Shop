@@ -1,12 +1,7 @@
 import BannerImg from "../../assets/coffee-white.png";
-import { GrSecure } from "react-icons/gr";
-import { IoFastFood } from "react-icons/io5";
-import { GiFoodTruck } from "react-icons/gi";
-
 
 const bgImage = {
-  backgroundColor: "#000000", 
-
+  backgroundColor: "#000000",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
@@ -27,55 +22,35 @@ const Banner = () => {
                 <img
                   src={BannerImg}
                   alt="coffee img"
-                  className="max-w-[430px] w-full mx-auto drop-shadow-[10px_-10px_12px_rgba(0,0,0,1)] spin"
+                  className="max-w-[430px] w-full mx-auto drop-shadow-[10px_-10px_12px_rgba(0,0,0,1)]"
                 />
               </div>
-              {/* text content section */}
+              {/* Text content section */}
               <div className="flex flex-col justify-center gap-6 sm:pt-0">
                 <h1
                   data-aos="fade-up"
                   className="text-3xl font-bold sm:text-4xl font-cursive"
-                  style={{ color: '#fff' }} // Adjusting text color to stand out on the black background
+                  style={{ color: '#fff' }}
                 >
-                  Premium Blend Coffee
+                  About us
                 </h1>
                 <p
                   data-aos="fade-up"
-                  className="text-sm leading-5 tracking-wide text-gray-500"
-                  style={{ color: '#fff' }} // Adjusting text color to white
+                  className="text-sm leading-5 tracking-wide"
+                  style={{ color: '#fff' }}
                 >
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Eaque reiciendis inventore iste ratione ex alias quis magni at
-                  optio
+                  optio.
                 </p>
 
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="space-y-5">
-                    <div data-aos="fade-up" className="flex items-center gap-3">
-                      <GrSecure className="w-12 h-12 p-3 text-2xl bg-red-100 rounded-full shadow-sm " />
-                      <span style={{ color: '#fff' }}>Premium Coffee</span>
-                    </div>
-                    <div
-                      data-aos="fade-up"
-                      data-aos-delay="300"
-                      className="flex items-center gap-3"
-                    >
-                      <IoFastFood className="w-12 h-12 p-3 text-2xl bg-orange-100 rounded-full shadow-sm " />
-                      <span style={{ color: '#fff' }}>Hot Coffee</span>
-                    </div>
-                    <div
-                      data-aos="fade-up"
-                      data-aos-delay="500"
-                      className="flex items-center gap-3"
-                    >
-                      <GiFoodTruck className="w-12 h-12 p-3 text-4xl bg-yellow-100 rounded-full shadow-sm" />
-                      <span style={{ color: '#fff' }}>Cold Coffee</span>
-                    </div>
+                <div className="flex items-start justify-between gap-6">
+                  {/* Left Section */}
+                  <div>
+                    {/* Additional content or leave empty */}
                   </div>
-                  <div
-                    data-aos="slide-left"
-                    className="pl-6 space-y-2 border-l-4 border-primary/50"
-                  >
+                  {/* Tea Lover section */}
+                  <div className="pl-4 border-l-4 border-primary/50">
                     <h1 className="text-2xl font-semibold font-cursive" style={{ color: '#fff' }}>
                       Tea Lover
                     </h1>
