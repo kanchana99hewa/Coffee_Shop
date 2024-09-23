@@ -1,5 +1,3 @@
-
-
 import PlayStoreImg from "../../assets/website/play_store.png";
 import BgPng from "../../assets/website/coffee-beans-bg.png";
 
@@ -8,9 +6,11 @@ const backgroundStyle = {
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
+  backgroundColor: "white",  // Set the background to white
   height: "100%",
   width: "100%",
 };
+
 const AppStore = () => {
   return (
     <>
@@ -35,7 +35,6 @@ const AppStore = () => {
                     className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
                   />
                 </a>
-              
               </div>
             </div>
             {/* Empty div */}
