@@ -1,12 +1,11 @@
 import PlayStoreImg from "../../assets/website/play_store.png";
-import BgPng from "../../assets/website/coffee-beans-bg.png";
+
 
 const backgroundStyle = {
-  backgroundImage: `url(${BgPng})`,
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-  backgroundColor: "white",  // Set the background to white
+  backgroundColor: "white",  
   height: "100%",
   width: "100%",
 };
@@ -24,7 +23,7 @@ const AppStore = () => {
             >
               {/* text section */}
               <h1 className="pl-3 text-2xl font-semibold text-center sm:text-left sm:text-4xl text-black/90">
-                Coffee Cafe is available for Android and IOS
+                Coffee Cafe is available for Android 
               </h1>
               {/* img section */}
               <div className="flex flex-wrap items-center justify-center sm:justify-start">
@@ -37,8 +36,14 @@ const AppStore = () => {
                 </a>
               </div>
             </div>
-            {/* Empty div */}
-            <div></div>
+            {/* Beans Image on the right side */}
+            <div className="flex justify-center sm:justify-end">
+              <img
+                src="/bis.png"
+                alt="Coffee beans"
+                className="max-w-[300px] sm:max-w-[400px] md:max-w-[450px]"
+              />
+            </div>
           </div>
         </div>
       </div>
