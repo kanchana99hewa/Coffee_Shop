@@ -90,7 +90,7 @@ const Testimonials = () => {
                 >
                   <div className="mb-4">
                     <img
-                      src={data.img}
+                       src="/man.png"
                       alt=""
                       className="w-20 h-20 rounded-full"
                     />
