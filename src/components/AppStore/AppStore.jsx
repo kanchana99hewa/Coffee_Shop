@@ -1,5 +1,5 @@
 
-import AppStoreImg from "../../assets/website/app_store.png";
+
 import PlayStoreImg from "../../assets/website/play_store.png";
 import BgPng from "../../assets/website/coffee-beans-bg.png";
 
@@ -23,7 +23,7 @@ const AppStore = () => {
               className="max-w-xl mx-auto space-y-6"
             >
               {/* text section */}
-              <h1 className="pl-3 text-2xl font-semibold text-center sm:text-left sm:text-4xl text-white/90">
+              <h1 className="pl-3 text-2xl font-semibold text-center sm:text-left sm:text-4xl text-black/90">
                 Coffee Cafe is available for Android and IOS
               </h1>
               {/* img section */}
@@ -35,13 +35,7 @@ const AppStore = () => {
                     className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
                   />
                 </a>
-                <a href="#">
-                  <img
-                    src={AppStoreImg}
-                    alt="App store"
-                    className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
-                  />
-                </a>
+              
               </div>
             </div>
             {/* Empty div */}

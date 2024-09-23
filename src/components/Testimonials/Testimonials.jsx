@@ -1,4 +1,3 @@
-
 import Slider from "react-slick";
 
 const TestimonialData = [
@@ -68,13 +67,13 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="py-10 mb-10">
+    <div className="py-10 mb-10 bg-black">
       <div className="container">
         {/* header section */}
         <div className="mb-10">
           <h1
             data-aos="fade-up"
-            className="text-4xl font-bold text-center font-cursive"
+            className="text-4xl font-bold text-center text-white font-cursive"
           >
             Testimonials
           </h1>
@@ -99,13 +98,13 @@ const Testimonials = () => {
                   {/* content section */}
                   <div className="flex flex-col items-center gap-4">
                     <div className="space-y-3">
-                      <p className="text-xs text-gray-500">{data.text}</p>
-                      <h1 className="text-xl font-bold text-black/80 font-cursive2">
+                      <p className="text-xs text-gray-100">{data.text}</p>
+                      <h1 className="text-xl font-bold text-white/80 font-cursive2">
                         {data.name}
                       </h1>
                     </div>
                   </div>
-                  <p className="absolute top-0 right-0 font-serif text-black/20 text-9xl">
+                  <p className="absolute top-0 right-0 font-serif text-white/80 text-9xl">
                     ,,
                   </p>
                 </div>
