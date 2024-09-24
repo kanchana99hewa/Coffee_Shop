@@ -1,6 +1,4 @@
-import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
-import FooterBg from "../../assets/website/coffee-footer.jpg";
 
 const FooterLinks = [
   {
@@ -21,17 +19,9 @@ const FooterLinks = [
   },
 ];
 
-const bgImage = {
-  backgroundImage: `url(${FooterBg})`,
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  minHeight: "400px",
-  width: "100%",
-};
 const Footer = () => {
   return (
-    <div style={bgImage} className="text-white ">
+    <div className="-mt-10 text-white bg-gray-800"> {/* Background color and moved up */}
       <div className="bg-black/40 min-h-[400px]">
         <div className="container grid pt-5 pb-20 md:grid-cols-3">
           {/* company details */}
