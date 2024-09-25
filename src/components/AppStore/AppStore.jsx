@@ -1,19 +1,18 @@
 import PlayStoreImg from "../../assets/website/play_store.png";
 
-
 const backgroundStyle = {
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundColor: "white",  
-  height: "100%",
+  height: "50%",  // You can adjust this as needed
   width: "100%",
 };
 
 const AppStore = () => {
   return (
     <>
-      <div className="py-14" style={backgroundStyle}>
+      <div className="py-8" style={backgroundStyle}>
         <div className="container">
           <div className="grid items-center grid-cols-1 gap-4 sm:grid-cols-2">
             <div
@@ -41,7 +40,7 @@ const AppStore = () => {
               <img
                 src="/bis.png"
                 alt="Coffee beans"
-                className="max-w-[300px] sm:max-w-[400px] md:max-w-[450px]"
+                className="max-w-[200px] sm:max-w-[250px] md:max-w-[300px]" 
               />
             </div>
           </div>
