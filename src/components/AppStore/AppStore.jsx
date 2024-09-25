@@ -5,14 +5,14 @@ const backgroundStyle = {
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundColor: "white",  
-  height: "50%",  // You can adjust this as needed
+  height: "45vh",  // Adjusted to take 45% of the viewport height
   width: "100%",
 };
 
 const AppStore = () => {
   return (
     <>
-      <div className="py-8" style={backgroundStyle}>
+      <div className="py-4" style={backgroundStyle}> {/* Reduced padding */}
         <div className="container">
           <div className="grid items-center grid-cols-1 gap-4 sm:grid-cols-2">
             <div
@@ -21,7 +21,7 @@ const AppStore = () => {
               className="max-w-xl mx-auto space-y-6"
             >
               {/* text section */}
-              <h1 className="pl-3 text-2xl font-semibold text-center sm:text-left sm:text-4xl text-black/90">
+              <h1 className="pl-3 text-xl font-semibold text-center sm:text-left sm:text-4xl text-black/90">
                 Coffee Cafe is available for Android 
               </h1>
               {/* img section */}
@@ -37,17 +37,17 @@ const AppStore = () => {
             </div>
             {/* Beans Image on the right side */}
             <div className="flex justify-center sm:justify-end">
-              <img
-                src="/bis.png"
-                alt="Coffee beans"
-                className="max-w-[200px] sm:max-w-[250px] md:max-w-[300px]" 
-              />
-            </div>
+            <img
+              src="/bis.png"
+              alt="Coffee beans"
+              className="max-w-[200px] sm:max-w-[250px] md:max-w-[300px] -mt-24" // Applied negative top margin
+            />
+          </div>
+
           </div>
         </div>
       </div>
     </>
   );
 };
-
 export default AppStore;
