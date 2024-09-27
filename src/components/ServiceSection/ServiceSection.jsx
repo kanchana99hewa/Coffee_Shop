@@ -1,4 +1,6 @@
-import { FaCoffee, FaLock, FaLeaf } from "react-icons/fa6";
+
+import PropTypes from 'prop-types';
+import { FaCoffee, FaLock, FaLeaf } from 'react-icons/fa6';
 
 const ServiceCard = ({ icon, title, description }) => (
   <div className="text-center">
@@ -7,6 +9,13 @@ const ServiceCard = ({ icon, title, description }) => (
     <p className="mt-2 text-gray-600">{description}</p> {/* Description */}
   </div>
 );
+
+// Add PropTypes validation
+ServiceCard.propTypes = {
+  icon: PropTypes.node.isRequired, // 'node' can be any renderable content (JSX, string, etc.)
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 const ServiceSection = () => {
   return (
