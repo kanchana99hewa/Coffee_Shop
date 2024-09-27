@@ -21,7 +21,7 @@ const FooterLinks = [
 
 const Footer = () => {
   return (
-    <div className="-mt-10 text-white bg-gray-800"> {/* Background color and moved up */}
+    <div className="-mt-10 text-white bg-amber-900"> {/* Changed background to brown */}
       <div className="bg-black/40 min-h-[250px]"> {/* Reduced minimum height */}
         <div className="container grid pt-4 pb-10 md:grid-cols-3"> {/* Reduced padding */}
           {/* Company details */}
