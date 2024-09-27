@@ -1,25 +1,24 @@
-
 import PropTypes from 'prop-types';
 import { FaCoffee, FaLock, FaLeaf } from 'react-icons/fa6';
 
 const ServiceCard = ({ icon, title, description }) => (
   <div className="text-center">
-    <div className="flex justify-center mb-4 text-5xl text-brown-500">{icon}</div> {/* Icon */}
-    <h3 className="text-xl font-semibold">{title}</h3> {/* Title */}
-    <p className="mt-2 text-gray-600">{description}</p> {/* Description */}
+    <div className="flex justify-center mb-4 text-5xl text-brown-500">{icon}</div>
+    <h3 className="text-xl font-semibold">{title}</h3>
+    <p className="mt-2 text-gray-600">{description}</p>
   </div>
 );
 
 // Add PropTypes validation
 ServiceCard.propTypes = {
-  icon: PropTypes.node.isRequired, // 'node' can be any renderable content (JSX, string, etc.)
+  icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
 
 const ServiceSection = () => {
   return (
-    <div className="py-10 bg-gray-50"> {/* Background and padding */}
+    <div className="py-10 bg-gray-50">
       <div className="container grid grid-cols-1 gap-8 mx-auto sm:grid-cols-3">
         <ServiceCard
           icon={<FaCoffee />}
