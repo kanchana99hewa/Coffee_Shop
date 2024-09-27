@@ -50,7 +50,8 @@ const ServiceSection = () => {
                 key={service.id}
                 data-aos="fade-up"
                 data-aos-delay={service.aosDelay}
-                className="rounded-2xl bg-black text-yellow-600 hover:bg-yellow-600 hover:text-black relative shadow-xl duration-high group max-w-[300px]"
+                className="rounded-2xl hover:text-black relative shadow-xl duration-high group max-w-[300px] border border-gray-300"
+                // Removed background classes
               >
                 <div className="h-[122px]">
                   <img
@@ -63,7 +64,7 @@ const ServiceSection = () => {
                 <div className="p-4 text-center">
                   <div className="w-full "></div>
                   <h1 className="text-xl font-bold">{service.name}</h1>
-                  <p className="text-sm text-white group-hover:text-white duration-high line-clamp-2">
+                  <p className="text-sm text-gray-600 group-hover:text-black duration-high line-clamp-2">
                     {service.description}
                   </p>
                 </div>
