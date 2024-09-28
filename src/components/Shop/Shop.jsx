@@ -32,7 +32,7 @@ const Shop = () => {
                   className="text-3xl font-bold sm:text-4xl font-cursive"
                   style={{ color: '#fff' }}
                 >
-                  About us
+                  Visit our shop
                 </h1>
               
 
