@@ -7,7 +7,7 @@ const ServicesData = [
     name: "Espresso",
     description:
       "Lorem ipsum dolor sit ipsum dolor sit dolor sit ipsum dolor sit amet.",
-    aosDelay: "100",
+    aosDelay: "100", // You can remove this if no animation is needed
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const ServicesData = [
     name: "Americano",
     description:
       "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
-    aosDelay: "300",
+    aosDelay: "300", // You can remove this if no animation is needed
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const ServicesData = [
     name: "Cappuccino",
     description:
       "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
-    aosDelay: "500",
+    aosDelay: "500", // You can remove this if no animation is needed
   },
 ];
 
@@ -46,23 +46,20 @@ const ServiceSection = () => {
             {ServicesData.map((service) => (
               <div
                 key={service.id}
-                data-aos="fade-up"
-                data-aos-delay={service.aosDelay}
-                className="text-black relative duration-high group max-w-[300px]"
+                className="text-black relative group max-w-[300px]"
               >
-                {/* Image section without any box or border */}
+                {/* Image section */}
                 <div className="h-[122px]">
                   <img
                     src={service.img}
                     alt={service.name}
-                    className="max-w-[200px] block mx-auto transform -translate-y-14
-                    group-hover:scale-105 group-hover:rotate-6 duration-300"
+                    className="max-w-[200px] block mx-auto"
                   />
                 </div>
                 {/* Text section */}
                 <div className="p-4 text-center">
                   <h1 className="text-xl font-bold">{service.name}</h1>
-                  <p className="text-sm text-gray-600 group-hover:text-black duration-high line-clamp-2">
+                  <p className="text-sm text-gray-600">
                     {service.description}
                   </p>
                 </div>
