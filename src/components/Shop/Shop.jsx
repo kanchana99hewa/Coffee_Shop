@@ -26,30 +26,18 @@ const Shop = () => {
                 />
               </div>
               {/* Text content section */}
-              <div className="flex flex-col justify-center gap-6 sm:pt-0">
-                <h1
-                  className="text-3xl font-bold sm:text-4xl font-cursive"
-                  style={{ color: '#fff' }}
-                >
+              <div className="flex flex-col items-center justify-center gap-6 text-center">
+                <h1 className="text-3xl font-bold sm:text-4xl font-cursive" style={{ color: '#fff' }}>
                   Visit our shop
                 </h1>
 
-                <div className="flex items-start justify-between gap-6">
-                  {/* Left Section */}
-                  <div>
-                    {/* Additional content or leave empty */}
-                  </div>
-                  {/* Main Content */}
-                  <div className="pl-4">
-                    <p className="text-sm" style={{ color: '#fff' }}>
-                      Much like writing code, brewing the perfect cup of tea
-                      requires patience, precision, and a dash of passion to
-                      create a comforting blend of flavors.
-                      At Coffee Café, we believe that a great cup of coffee is more than just a drink—it’s an experience. Founded with a passion for crafting the perfect brew, 
-                      our café is a haven for coffee lovers and enthusiasts alike. We source our beans from the finest farms, ensuring that every sip offers a unique blend of rich flavors and aromas. Whether you’re stopping by for a quick espresso or settling in for a relaxed afternoon with friends, we’re dedicated to making your visit memorable. Our cozy atmosphere, friendly staff.
-                    </p>
-                  </div>
-                </div>
+                <p className="text-sm" style={{ color: '#fff' }}>
+                  Much like writing code, brewing the perfect cup of tea
+                  requires patience, precision, and a dash of passion to
+                  create a comforting blend of flavors.
+                  At Coffee Café, we believe that a great cup of coffee is more than just a drink—it’s an experience. Founded with a passion for crafting the perfect brew, 
+                  our café is a haven for coffee lovers and enthusiasts alike. We source our beans from the finest farms, ensuring that every sip offers a unique blend of rich flavors and aromas. Whether you’re stopping by for a quick espresso or settling in for a relaxed afternoon with friends, we’re dedicated to making your visit memorable. Our cozy atmosphere, friendly staff.
+                </p>
               </div>
             </div>
           </div>
