@@ -12,6 +12,8 @@ import AppStore from "./components/AppStore/AppStore.jsx";
 import Testimonials from "./components/Testimonials/Testimonials.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import ServiceSection from './components/ServiceSection/ServiceSection.jsx';
+import Shop from "./components/Shop/Shop.jsx";
+
 
 
 const App = () => {
@@ -32,6 +34,7 @@ const App = () => {
       <Services />
       <Banner/>
       <ServiceSection/>
+      <Shop/>
       <AppStore/>
       <Testimonials/>
       <Footer/>

@@ -31,7 +31,7 @@ const ServiceSection = () => {
   return (
     <>
       <span id="services"></span>
-      <div className="py-10 bg-white">
+      <div className="py-10 bg-gray-300">
         {/* Added gray background here */}
         <div className="container">
           {/* Heading section */}
