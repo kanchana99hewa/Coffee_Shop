@@ -3,7 +3,7 @@ import coffee2 from "../../assets/coffee2.png";
 const ServicesData = [
   {
     id: 1,
-    img: coffee2, // Use the imported image here
+    img: coffee2,
     name: "Espresso",
     description:
       "Lorem ipsum dolor sit ipsum dolor sit dolor sit ipsum dolor sit amet.",
@@ -11,7 +11,7 @@ const ServicesData = [
   },
   {
     id: 2,
-    img: coffee2, // Use the imported image here
+    img: coffee2,
     name: "Americano",
     description:
       "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
@@ -19,7 +19,7 @@ const ServicesData = [
   },
   {
     id: 3,
-    img: coffee2, // Use the imported image here
+    img: coffee2,
     name: "Cappuccino",
     description:
       "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
@@ -32,37 +32,35 @@ const ServiceSection = () => {
     <>
       <span id="services"></span>
       <div className="py-10 bg-gray-300">
-        {/* Added gray background here */}
+        {/* Gray background for the section */}
         <div className="container">
           {/* Heading section */}
           <div className="mb-20 text-center">
             <h1 className="text-4xl font-bold text-black font-cursive">
-              {/* Changed text color to black */}
               Best Coffee For You
             </h1>
           </div>
 
           {/* Services Card section */}
           <div className="grid grid-cols-1 gap-20 sm:grid-cols-2 md:grid-cols-3 md:gap-20 place-items-center">
-            {/* Increased gap between rows */}
             {ServicesData.map((service) => (
               <div
                 key={service.id}
                 data-aos="fade-up"
                 data-aos-delay={service.aosDelay}
-                className="rounded-2xl hover:text-black relative shadow-xl duration-high group max-w-[300px] border border-gray-300"
-                // Removed background classes
+                className="text-black relative duration-high group max-w-[300px]"
               >
+                {/* Image section without any box or border */}
                 <div className="h-[122px]">
                   <img
-                    src={service.img} // Use dynamic image source here
-                    alt={service.name} // Provide a descriptive alt tag
+                    src={service.img}
+                    alt={service.name}
                     className="max-w-[200px] block mx-auto transform -translate-y-14
                     group-hover:scale-105 group-hover:rotate-6 duration-300"
                   />
                 </div>
+                {/* Text section */}
                 <div className="p-4 text-center">
-                  <div className="w-full "></div>
                   <h1 className="text-xl font-bold">{service.name}</h1>
                   <p className="text-sm text-gray-600 group-hover:text-black duration-high line-clamp-2">
                     {service.description}
