@@ -17,8 +17,8 @@ const Shop = () => {
         <div className="min-h-[550px] flex justify-center items-center py-12 sm:py-0" style={{ backgroundColor: '#000000' }}>
           <div className="container">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* Image section */}
-              <div data-aos="zoom-in">
+              {/* Image section without animation */}
+              <div>
                 <img
                   src={BannerImg}
                   alt="coffee img"
@@ -28,22 +28,19 @@ const Shop = () => {
               {/* Text content section */}
               <div className="flex flex-col justify-center gap-6 sm:pt-0">
                 <h1
-                  data-aos="fade-up"
                   className="text-3xl font-bold sm:text-4xl font-cursive"
                   style={{ color: '#fff' }}
                 >
                   Visit our shop
                 </h1>
-              
 
                 <div className="flex items-start justify-between gap-6">
                   {/* Left Section */}
                   <div>
                     {/* Additional content or leave empty */}
                   </div>
-                  {/* Tea Lover section */}
-                  <div className="pl-4 border-l-4 border-primary/50">
-                  
+                  {/* Main Content */}
+                  <div className="pl-4">
                     <p className="text-sm" style={{ color: '#fff' }}>
                       Much like writing code, brewing the perfect cup of tea
                       requires patience, precision, and a dash of passion to
