@@ -14,6 +14,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import ServiceSection from './components/ServiceSection/ServiceSection.jsx';
 import Shop from "./components/Shop/Shop.jsx";
 import Order from "./components/Order/Order.jsx";
+import Ordernow from "./components/Ordernow/Ordernow.jsx";
 
 
 
@@ -40,7 +41,9 @@ const App = () => {
       <AppStore/>
       <Testimonials/>
       <Footer/>
+      <Ordernow/>
     </div>
+   
   );
 };
 

@@ -6,7 +6,7 @@ const coffeeItems = [
   { id: 3, name: 'Latte', price: 4.5, image: '/assets/latte.jpg' },
 ];
 
-const OrderNow = () => {
+const Ordernow = () => {
   const [orderDetails, setOrderDetails] = useState({
     name: '',
     phone: '',
@@ -136,4 +136,4 @@ const OrderNow = () => {
   );
 };
 
-export default OrderNow;
+export default Ordernow;
