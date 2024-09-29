@@ -45,7 +45,7 @@ const ServiceSection = () => {
           </div>
 
           {/* Services Card section */}
-          <div className="grid grid-cols-1 gap-20 sm:grid-cols-2 md:grid-cols-3 md:gap-20 place-items-center">
+          <div className="grid grid-cols-1 gap-20 pl-20 sm:grid-cols-2 md:grid-cols-3 md:gap-20 place-items-center">
             {ServicesData.map((service) => (
               <div
                 key={service.id}
