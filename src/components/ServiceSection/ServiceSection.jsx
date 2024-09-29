@@ -7,7 +7,7 @@ const ServicesData = [
     name: "Espresso",
     description:
       "Lorem ipsum dolor sit ipsum dolor sit dolor sit ipsum dolor sit amet.",
-    aosDelay: "100", // You can remove this if no animation is needed
+    
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const ServicesData = [
     name: "Americano",
     description:
       "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
-    aosDelay: "300", // You can remove this if no animation is needed
+   
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const ServicesData = [
     name: "Cappuccino",
     description:
       "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
-    aosDelay: "500", // You can remove this if no animation is needed
+    
   },
 ];
 
@@ -49,9 +49,9 @@ const ServiceSection = () => {
                 className="text-black relative group max-w-[300px]"
               >
                 {/* Image section */}
-                <div className="h-[122px]">
+                <div className="h-[100px] mb-4">
                   <img
-                    src={service.img}
+                    src="/cup1.png"
                     alt={service.name}
                     className="max-w-[200px] block mx-auto"
                   />
