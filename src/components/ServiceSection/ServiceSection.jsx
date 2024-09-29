@@ -1,9 +1,12 @@
-import coffee2 from "../../assets/coffee2.png";
+
+import cup1 from "../../assets/cup1.png";
+import cup4 from "../../assets/cup4.png";
+import cup5 from "../../assets/cup5.png";
 
 const ServicesData = [
   {
     id: 1,
-    img: coffee2,
+    img: cup1, // Different image for Espresso
     name: "Espresso",
     description:
       "Lorem ipsum dolor sit ipsum dolor sit dolor sit ipsum dolor sit amet.",
@@ -11,7 +14,7 @@ const ServicesData = [
   },
   {
     id: 2,
-    img: coffee2,
+    img: cup4, // Different image for Americano
     name: "Americano",
     description:
       "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
@@ -19,7 +22,7 @@ const ServicesData = [
   },
   {
     id: 3,
-    img: coffee2,
+    img: cup5, // Different image for Cappuccino
     name: "Cappuccino",
     description:
       "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
@@ -51,7 +54,7 @@ const ServiceSection = () => {
                 {/* Image section */}
                 <div className="h-[100px] mb-4">
                   <img
-                    src="/cup1.png"
+                    src={service.img} // Use dynamic image
                     alt={service.name}
                     className="max-w-[200px] block mx-auto"
                   />
