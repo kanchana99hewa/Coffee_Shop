@@ -5,7 +5,7 @@ const Order = () => {
     <div
       className="relative h-[300px] flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: `url('/path-to-your-image/coffee-beans-bg.jpg')`, // Replace with your actual image path
+        backgroundImage: `url('/assets/beans.jpg')`, 
       }}
     >
       <div className="absolute inset-0 bg-black opacity-60"></div> {/* Overlay */}
