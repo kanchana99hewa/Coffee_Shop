@@ -1,4 +1,4 @@
-import BannerImg from "../../assets/coffee-white.png";
+import BannerImg from "../../assets/room.jpg";
 
 const bgImage = {
   backgroundColor: "#000000",
