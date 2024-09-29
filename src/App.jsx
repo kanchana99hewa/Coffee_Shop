@@ -13,6 +13,7 @@ import Testimonials from "./components/Testimonials/Testimonials.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import ServiceSection from './components/ServiceSection/ServiceSection.jsx';
 import Shop from "./components/Shop/Shop.jsx";
+import Order from "./components/Order/Order.jsx";
 
 
 
@@ -35,6 +36,7 @@ const App = () => {
       <Banner/>
       <ServiceSection/>
       <Shop/>
+      <Order/>
       <AppStore/>
       <Testimonials/>
       <Footer/>

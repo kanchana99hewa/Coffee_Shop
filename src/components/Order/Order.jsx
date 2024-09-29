@@ -1,6 +1,6 @@
 
 
-const CoffeeBanner = () => {
+const Order = () => {
   return (
     <div
       className="relative h-[300px] flex items-center justify-center bg-cover bg-center"
@@ -25,4 +25,4 @@ const CoffeeBanner = () => {
   );
 };
 
-export default CoffeeBanner;
+export default Order;
