@@ -1,6 +1,6 @@
 
 
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import  { useEffect } from 'react'; 
 import Navbar from "./components/Navbar/Navbar";
 import AOS from "aos";
@@ -30,8 +30,9 @@ const App = () => {
   }, []);
 
   return (
+    <Router>
     <div className="overflow-x-hidden duration-200 bg-white dark:bg-gray-900 dark:text-white">
-      <Navbar />
+    <Navbar />
       <MainSection/>
       <Services />
       <Banner/>
@@ -41,8 +42,21 @@ const App = () => {
       <AppStore/>
       <Testimonials/>
       <Footer/>
-      <Ordernow/>
+      <Routes>
+        
+        <Route path="/order-now" element={<Ordernow />} />
+        
+      </Routes>
+      <Footer />
     </div>
+  </Router>
+
+  
+   
+    
+     
+
+    
    
   );
 };

@@ -1,6 +1,7 @@
 import Logo from "../../assets/website/coffee_logo.png";
 import { FaCoffee } from "react-icons/fa";
 import './Navbar.css'; 
+import { Link } from "react-router-dom"; 
 
 const Menu = [
   {
@@ -55,16 +56,16 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <button className="flex items-center gap-3 px-4 py-2 text-white duration-200 bg-yellow-600 rounded-full hover:scale-105">
-                Order
-                <FaCoffee className="text-xl text-white cursor-pointer drop-shadow-sm" />
-              </button>
+              <Link to="/order-now">
+                <button className="flex items-center gap-3 px-4 py-2 text-white duration-200 bg-yellow-600 rounded-full hover:scale-105">
+                  Order
+                  <FaCoffee className="text-xl text-white cursor-pointer drop-shadow-sm" />
+                </button>
+              </Link>
             </div>
           </div>
           {/* Centered yellow line */}
           <div className="w-full h-1 my-4 bg-yellow-600" style={{ marginLeft: '4%' }}></div>
-
-
         </div>
       </div>
     </>
