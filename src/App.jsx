@@ -40,7 +40,7 @@ const App = () => {
         <Routes>
           <Route path="/order-now" element={<OrderNow />} /> {/* Fixed route to PascalCase */}
         </Routes>
-        <Footer />
+        
       </div>
     </Router>
   );

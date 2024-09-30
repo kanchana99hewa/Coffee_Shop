@@ -32,10 +32,10 @@ const Testimonials = () => {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 500,
+    speed: 500, // Speed of the transition between slides
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000, // Decreased from 2000ms to 1000ms (1 second)
     cssEase: "linear",
     pauseOnHover: true,
     pauseOnFocus: true,
@@ -88,7 +88,7 @@ const Testimonials = () => {
                   <div className="mb-4">
                     <img
                       src="/man.png"
-                      alt=""
+                      alt="Testimonial Avatar"
                       className="w-20 h-20 rounded-full"
                     />
                   </div>
