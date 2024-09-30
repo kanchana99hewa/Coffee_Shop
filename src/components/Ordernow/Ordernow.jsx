@@ -6,7 +6,7 @@ const coffeeItems = [
   { id: 3, name: 'Latte', price: 4.5, image: '/assets/latte.jpg' },
 ];
 
-const Ordernow = () => {
+const OrderNow = () => {  // Ensure this component name matches the import in App.js
   const [orderDetails, setOrderDetails] = useState({
     name: '',
     phone: '',
@@ -34,7 +34,6 @@ const Ordernow = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Process the order details here (e.g., send to backend)
     console.log(orderDetails);
     alert('Order submitted successfully!');
   };
@@ -136,4 +135,4 @@ const Ordernow = () => {
   );
 };
 
-export default Ordernow;
+export default OrderNow;
