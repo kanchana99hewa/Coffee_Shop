@@ -38,7 +38,7 @@ const App = () => {
         <Testimonials />
         <Footer />
         <Routes>
-          <Route path="/order-now" element={<OrderNow />} /> {/* Fixed route to PascalCase */}
+          <Route path="/OrderNow" element={<OrderNow />} /> 
         </Routes>
         
       </div>

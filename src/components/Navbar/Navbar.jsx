@@ -56,7 +56,7 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <Link to="/order-now">
+              <Link to="/OrderNow">
                 <button className="flex items-center gap-3 px-4 py-2 text-white duration-200 bg-yellow-600 rounded-full hover:scale-105">
                   Order
                   <FaCoffee className="text-xl text-white cursor-pointer drop-shadow-sm" />

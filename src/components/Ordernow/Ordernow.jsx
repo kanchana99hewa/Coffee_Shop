@@ -6,7 +6,7 @@ const coffeeItems = [
   { id: 3, name: 'Latte', price: 4.5, image: '/assets/latte.jpg' },
 ];
 
-const OrderNow = () => {  // Ensure this component name matches the import in App.js
+const OrderNow = () => { 
   const [orderDetails, setOrderDetails] = useState({
     name: '',
     phone: '',
