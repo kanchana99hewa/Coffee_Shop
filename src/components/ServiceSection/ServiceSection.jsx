@@ -42,6 +42,7 @@ const ServiceSection = () => {
             <h1 className="text-4xl font-bold text-black font-cursive">
               Best Coffee For You
             </h1>
+            
           </div>
 
           {/* Services Card section */}
