@@ -65,7 +65,13 @@ const Services = () => {
               Best Coffee For You
             </h1>
           </div>
-
+          {/* first row signature */}
+          <div className="my-16 text-center">
+            <h2 className="text-2xl font-semibold text-yellow-600">
+             Espresso 
+            </h2>
+           
+          </div>
           {/* First Row of Service Cards */}
           <div className="grid grid-cols-1 gap-20 sm:grid-cols-2 md:grid-cols-3 md:gap-20 place-items-center">
             {ServicesData.slice(0, 3).map((service) => (
@@ -95,9 +101,10 @@ const Services = () => {
           </div>
 
           {/* Subtopic for the Middle */}
-          <div className="my-10 text-center">
-            <h2 className="text-2xl font-semibold text-black">
-              Discover Our Unique Creations
+         
+          <div className="my-16 text-center">
+            <h2 className="text-2xl font-semibold text-yellow-600">
+              Signature Drinks
             </h2>
            
           </div>
