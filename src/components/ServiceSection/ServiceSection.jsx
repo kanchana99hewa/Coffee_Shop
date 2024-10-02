@@ -7,7 +7,7 @@ const ServicesData = [
   {
     id: 1,
     img: cup1, // Different image for Espresso
-    name: "Espresso",
+    name: "Safe payment",
     description:
       "Lorem ipsum dolor sit ipsum dolor sit dolor sit ipsum dolor sit amet.",
     
@@ -15,7 +15,7 @@ const ServicesData = [
   {
     id: 2,
     img: cup4, // Different image for Americano
-    name: "Americano",
+    name: "sustainability",
     description:
       "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
    
@@ -23,7 +23,7 @@ const ServicesData = [
   {
     id: 3,
     img: cup5, // Different image for Cappuccino
-    name: "Cappuccino",
+    name: "qaulity",
     description:
       "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
     

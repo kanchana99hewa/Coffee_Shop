@@ -37,6 +37,7 @@ const App = () => {
         <AppStore />
         <Testimonials />
         <Footer />
+        
         <Routes>
           <Route path="/OrderNow" element={<OrderNow />} /> 
         </Routes>
