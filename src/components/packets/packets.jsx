@@ -1,30 +1,29 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
-
+import pac from "../../assets/packets.png"; 
 const Packets = () => {
   const coffeeData = [
     {
       id: 1,
       name: "Arabica",
       roast: "Dark Roast",
-      imgSrc: "path_to_your_image_1", // Update with your image path
+      imgSrc: pac,
     },
     {
       id: 2,
       name: "House Blend",
       roast: "Dark Roast",
-      imgSrc: "path_to_your_image_2", // Update with your image path
+      imgSrc: pac,
     },
     {
       id: 3,
       name: "Robusta",
       roast: "Dark Roast",
-      imgSrc: "path_to_your_image_3", // Update with your image path
+      imgSrc: pac,
     },
   ];
 
   return (
-    <div className="bg-[#2c1711] py-10">
+    <div className="bg-[#ffffff] py-10">
       <div className="mb-8 text-center">
         <h2 className="text-4xl text-[#f5deb3] font-cursive">Recommended</h2>
       </div>
