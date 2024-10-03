@@ -46,6 +46,42 @@ const Packets = () => {
       roast: "Dark Roast",
       imgSrc: pac,
     },
+    {
+        id: 8,
+        name: "House Blend",
+        roast: "Dark Roast",
+        imgSrc: pac,
+      },
+      {
+        id: 9,
+        name: "Robusta",
+        roast: "Dark Roast",
+        imgSrc: pac,
+      },
+      {
+        id: 10,
+        name: "Espresso",
+        roast: "Dark Roast",
+        imgSrc: pac,
+      },
+      {
+        id: 11,
+        name: "Colombian",
+        roast: "Medium Roast",
+        imgSrc: pac,
+      },
+      {
+        id: 12,
+        name: "French Roast",
+        roast: "Dark Roast",
+        imgSrc: pac,
+      },
+      {
+        id: 13,
+        name: "Italian Roast",
+        roast: "Dark Roast",
+        imgSrc: pac,
+      },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
