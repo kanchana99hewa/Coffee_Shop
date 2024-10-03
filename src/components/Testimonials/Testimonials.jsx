@@ -1,23 +1,24 @@
 import Slider from "react-slick";
+import Img2 from "../../assets/coffee2.png";
 
 const TestimonialData = [
   {
     id: 1,
     name: "Dilshad",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/101/101",
+    img: Img2,
   },
   {
     id: 2,
     name: "Sabir ali",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/102/102",
+    img: Img2,
   },
   {
     id: 3,
     name: "Dipankar kumar",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/104/104",
+    img: Img2,
   },
   {
     id: 5,
