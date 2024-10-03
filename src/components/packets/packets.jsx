@@ -72,7 +72,7 @@ const Packets = () => {
       </div>
 
       {/* Display the current set of coffee items */}
-      <div className="flex justify-center px-10 space-x-8">
+      <div className="flex justify-center px-10 space-x-24"> {/* Increased space-x to 12 */}
         {currentItems.map((coffee) => (
           <div
             key={coffee.id}
