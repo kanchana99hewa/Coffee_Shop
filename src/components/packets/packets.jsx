@@ -1,7 +1,7 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
-const CoffeeRecommendation = () => {
+const Packets = () => {
   const coffeeData = [
     {
       id: 1,
@@ -73,4 +73,4 @@ const CoffeeRecommendation = () => {
   );
 };
 
-export default CoffeeRecommendation;
+export default Packets;

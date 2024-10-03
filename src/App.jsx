@@ -13,6 +13,9 @@ import ServiceSection from './components/ServiceSection/ServiceSection';
 import Shop from './components/Shop/Shop';
 import Order from './components/Order/Order';
 import OrderNow from './components/OrderNow/OrderNow'; 
+import Packets from './components/Packets/Packets';
+
+
 
 const App = () => {
   useEffect(() => {
@@ -33,6 +36,7 @@ const App = () => {
         <Banner />
         <ServiceSection />
         <Shop />
+        <Packets/>
         <Order />
         <AppStore />
         <Testimonials />
