@@ -47,59 +47,63 @@ const Packets = () => {
       imgSrc: pac,
     },
     {
-        id: 8,
-        name: "House Blend",
-        roast: "Dark Roast",
-        imgSrc: pac,
-      },
-      {
-        id: 9,
-        name: "Robusta",
-        roast: "Dark Roast",
-        imgSrc: pac,
-      },
-      {
-        id: 10,
-        name: "Espresso",
-        roast: "Dark Roast",
-        imgSrc: pac,
-      },
-      {
-        id: 11,
-        name: "Colombian",
-        roast: "Medium Roast",
-        imgSrc: pac,
-      },
-      {
-        id: 12,
-        name: "French Roast",
-        roast: "Dark Roast",
-        imgSrc: pac,
-      },
-      {
-        id: 13,
-        name: "Italian Roast",
-        roast: "Dark Roast",
-        imgSrc: pac,
-      },
+      id: 8,
+      name: "House Blend",
+      roast: "Dark Roast",
+      imgSrc: pac,
+    },
+    {
+      id: 9,
+      name: "Robusta",
+      roast: "Dark Roast",
+      imgSrc: pac,
+    },
+    {
+      id: 10,
+      name: "Espresso",
+      roast: "Dark Roast",
+      imgSrc: pac,
+    },
+    {
+      id: 11,
+      name: "Colombian",
+      roast: "Medium Roast",
+      imgSrc: pac,
+    },
+    {
+      id: 12,
+      name: "French Roast",
+      roast: "Dark Roast",
+      imgSrc: pac,
+    },
+    {
+      id: 13,
+      name: "Italian Roast",
+      roast: "Dark Roast",
+      imgSrc: pac,
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsPerPage = 5;
+  const itemsPerPage = 5; // Show 5 items at a time
 
+  // Handle shifting one item to the left
   const handlePrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? coffeeData.length - itemsPerPage : prevIndex - itemsPerPage
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? coffeeData.length - 1 : prevIndex - 1
     );
   };
 
+  // Handle shifting one item to the right
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + itemsPerPage >= coffeeData.length ? 0 : prevIndex + itemsPerPage
+    setCurrentIndex((prevIndex) => 
+      (prevIndex + 1) % coffeeData.length
     );
   };
 
-  const currentItems = coffeeData.slice(currentIndex, currentIndex + itemsPerPage);
+  // Calculate the current items to display
+  const currentItems = coffeeData.slice(currentIndex, currentIndex + itemsPerPage)
+    .concat(coffeeData.slice(0, Math.max(0, (currentIndex + itemsPerPage) - coffeeData.length)));
 
   return (
     <div className="bg-[#ffffff] py-10">
@@ -108,7 +112,7 @@ const Packets = () => {
       </div>
 
       {/* Display the current set of coffee items */}
-      <div className="flex justify-center px-10 space-x-24"> {/* Increased space-x to 12 */}
+      <div className="flex justify-center px-10 space-x-24">
         {currentItems.map((coffee) => (
           <div
             key={coffee.id}
