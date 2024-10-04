@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        darkAmber: '#4a2700', // Custom darker amber
+      },
       fontFamily: {
         brush: ['"Alex Brush"', 'cursive'],
       },
