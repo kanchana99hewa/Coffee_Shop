@@ -1,30 +1,32 @@
 import Slider from "react-slick";
+import Img1 from "../../assets/coffee2.png"; // Import different images
 import Img2 from "../../assets/coffee2.png";
+import Img3 from "../../assets/coffee2.png";
 
 const TestimonialData = [
   {
     id: 1,
     name: "Dilshad",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: Img2,
+    img: Img1, // Unique image
   },
   {
     id: 2,
-    name: "Sabir ali",
+    name: "Sabir Ali",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: Img2,
+    img: Img2, // Unique image
   },
   {
     id: 3,
-    name: "Dipankar kumar",
+    name: "Dipankar Kumar",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: Img2,
+    img: Img3, // Unique image
   },
   {
-    id: 5,
+    id: 4,
     name: "Satya Narayan",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/103/103",
+    img: "https://picsum.photos/103/103", // Example external image
   },
 ];
 
@@ -88,8 +90,8 @@ const Testimonials = () => {
                 <div className="relative flex flex-col gap-4 px-6 py-8 mx-4 shadow-lg rounded-xl bg-primary/10">
                   <div className="mb-4">
                     <img
-                      src="/man.png"
-                      alt="Testimonial Avatar"
+                      src={data.img} // Use unique image for each person
+                      alt={data.name}
                       className="w-20 h-20 rounded-full"
                     />
                   </div>
