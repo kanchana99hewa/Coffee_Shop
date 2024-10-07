@@ -1,11 +1,7 @@
-import React, { FC } from 'react';
 
-interface ModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-}
+import PropTypes from 'prop-types';
 
-const OrderModal: FC<ModalProps> = ({ isOpen, onClose }) => {
+const OrderModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
@@ -53,6 +49,11 @@ const OrderModal: FC<ModalProps> = ({ isOpen, onClose }) => {
       </div>
     </div>
   );
+};
+
+OrderModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default OrderModal;
