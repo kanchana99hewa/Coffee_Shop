@@ -12,8 +12,9 @@ import Footer from './components/Footer/Footer';
 import ServiceSection from './components/ServiceSection/ServiceSection';
 import Shop from './components/Shop/Shop';
 import Order from './components/Order/Order';
-import OrderNow from './components/OrderNow/OrderNow'; 
+
 import Packets from './components/Packets/Packets';
+
 
 
 
@@ -42,9 +43,7 @@ const App = () => {
         <Testimonials />
         <Footer />
         
-        <Routes>
-          <Route path="/OrderNow" element={<OrderNow />} /> 
-        </Routes>
+        
         
       </div>
     </Router>
