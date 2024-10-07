@@ -2,6 +2,7 @@ import Logo from "../../assets/website/coffee_logo.png";
 import { FaCoffee } from "react-icons/fa";
 import './Navbar.css'; 
 import { useNavigate } from "react-router-dom";  // Import useNavigate for programmatic navigation
+import OrderModal from "../popUp/OrderModal";  // Corrected path
 
 const Menu = [
   {
@@ -72,6 +73,9 @@ const Navbar = () => {
           <div className="w-full h-1 my-4 bg-yellow-600" style={{ marginLeft: '4%' }}></div>
         </div>
       </div>
+
+      {/* Render OrderModal somewhere in the JSX */}
+      <OrderModal />
     </>
   );
 };
