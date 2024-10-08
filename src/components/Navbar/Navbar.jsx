@@ -2,7 +2,8 @@ import Logo from "../../assets/website/coffee_logo.png";
 import { FaCoffee } from "react-icons/fa";
 import './Navbar.css'; 
 import { useNavigate } from "react-router-dom";  // Import useNavigate for programmatic navigation
-import OrderModal from "../popUp/OrderModal";  // Corrected path
+import OrderModal from '../popUp/OrderModal/OrderModal';
+
 
 const Menu = [
   {

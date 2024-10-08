@@ -14,7 +14,7 @@ import Shop from './components/Shop/Shop';
 import Order from './components/Order/Order';
 
 import Packets from './components/Packets/Packets';
-import OrderModal from '../../popUp/OrderModal';
+
 
 
 
@@ -41,7 +41,7 @@ const App = () => {
         <Shop />
         <Packets/>
         <Order />
-        <OrderModal/>
+  
         <AppStore />
         <Testimonials />
         <Footer />
