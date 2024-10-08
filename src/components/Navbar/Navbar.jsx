@@ -1,9 +1,8 @@
+import { useState } from "react"; // Import useState to handle modal state
 import Logo from "../../assets/website/coffee_logo.png";
 import { FaCoffee } from "react-icons/fa";
 import './Navbar.css'; 
-import { useNavigate } from "react-router-dom";  // Import useNavigate for programmatic navigation
 import OrderModal from '../popUp/OrderModal/OrderModal';
-
 
 const Menu = [
   {
@@ -24,7 +23,15 @@ const Menu = [
 ];
 
 const Navbar = () => {
-  const navigate = useNavigate();  // Initialize useNavigate hook
+  const [isModalOpen, setIsModalOpen] = useState(false); // Modal state management
+
+  const openModal = () => {
+    setIsModalOpen(true); // Open the modal
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false); // Close the modal
+  };
 
   return (
     <>
@@ -61,7 +68,7 @@ const Navbar = () => {
 
               {/* Order Now Button */}
               <button
-                onClick={() => navigate("/OrderNow")}  // Correct use of navigate
+                onClick={openModal}  // Open modal on button click
                 className="flex items-center gap-3 px-4 py-2 text-white duration-200 bg-yellow-600 rounded-full hover:scale-105"
               >
                 Order
@@ -75,8 +82,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Render OrderModal somewhere in the JSX */}
-      <OrderModal />
+      {/* Render OrderModal and pass props */}
+      <OrderModal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 };
