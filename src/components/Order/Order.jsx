@@ -1,6 +1,18 @@
+import { useState } from 'react';
 import beansImage from "../../assets/beans.jpg";
+import OrderModal from '../popUp/OrderModal/OrderModal'; // Import OrderModal
 
 const Order = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false); // Modal state
+
+  const openModal = () => {
+    setIsModalOpen(true); // Open modal
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false); // Close modal
+  };
+
   return (
     <div
       className="relative h-[300px] flex items-center justify-center bg-cover bg-center"
@@ -12,15 +24,23 @@ const Order = () => {
 
       <div className="relative px-4 text-center text-white">
         <h1 className="text-4xl font-bold">
-          A MORNING WITHOUT <span className="text-[#d2691e]">COFFEE</span> LIKE A SLEEP
+          A MORNING WITHOUT <span className="text-[#d2691e]">COFFEE</span> IS LIKE A SLEEP
         </h1>
         <p className="mt-4 text-lg">
           Lorem ipsum dolor sit amet consectetur. Tellus at nulla ornare mauris ultrices.
         </p>
-        <button className="mt-6 px-8 py-2 bg-[#d2691e] text-white rounded-full text-lg">
+
+        {/* Order Now Button triggers the modal */}
+        <button
+          onClick={openModal}  // Open modal on click
+          className="mt-6 px-8 py-2 bg-[#d2691e] text-white rounded-full text-lg"
+        >
           Order Now
         </button>
       </div>
+
+      {/* Render OrderModal and pass props */}
+      <OrderModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };
