@@ -14,7 +14,7 @@ const OrdersPage = () => {
       {/* Order button to open the modal */}
       <button
         onClick={openModal}
-        className="px-4 py-2 text-white bg-indigo-600 rounded-lg"
+        className="px-4 py-2 text-white bg-indigo-900 rounded-lg"
       >
         Order Coffee
       </button>
