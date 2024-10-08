@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { useEffect } from 'react'; 
 import Navbar from './components/Navbar/Navbar';
 import AOS from 'aos';
@@ -14,6 +14,8 @@ import Shop from './components/Shop/Shop';
 import Order from './components/Order/Order';
 
 import Packets from './components/Packets/Packets';
+import OrderModal from '../../popUp/OrderModal';
+
 
 
 
@@ -39,9 +41,11 @@ const App = () => {
         <Shop />
         <Packets/>
         <Order />
+        <OrderModal/>
         <AppStore />
         <Testimonials />
         <Footer />
+        
         
         
         
