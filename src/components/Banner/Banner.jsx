@@ -35,7 +35,6 @@ const Banner = () => {
                   About us
                 </h1>
               
-
                 <div className="flex items-start justify-between gap-6">
                   {/* Left Section */}
                   <div>
@@ -43,15 +42,9 @@ const Banner = () => {
                   </div>
                   {/* Tea Lover section */}
                   <div className="pl-4 border-l-4 border-primary/50">
-                  
-                  <p className="text-sm text-white text-justify-custom">
-                  Much like writing code, brewing the perfect cup of tea
-                  requires patience, precision, and a dash of passion to
-                  create a comforting blend of flavors. At Coffee Café, we believe that a great cup of coffee is more than just a drink—it’s an experience. Founded with a passion for crafting the perfect brew, 
-                  our café is a haven for coffee lovers and enthusiasts alike. We source our beans from the finest farms, ensuring that every sip offers a unique blend of rich flavors and aromas. Whether you’re stopping by for a quick espresso or settling in for a relaxed afternoon with friends, we’re dedicated to making your visit memorable. Our cozy atmosphere, friendly staff.
-                </p>
-
-
+                    <p className="text-sm text-justify text-white">
+                      Much like writing code, brewing the perfect cup of tea requires patience, precision, and a dash of passion to create a comforting blend of flavors. At Coffee Café, we believe that a great cup of coffee is more than just a drink—it’s an experience. Founded with a passion for crafting the perfect brew, our café is a haven for coffee lovers and enthusiasts alike. We source our beans from the finest farms, ensuring that every sip offers a unique blend of rich flavors and aromas. Whether you’re stopping by for a quick espresso or settling in for a relaxed afternoon with friends, we’re dedicated to making your visit memorable. Our cozy atmosphere, friendly staff.
+                    </p>
                   </div>
                 </div>
               </div>
