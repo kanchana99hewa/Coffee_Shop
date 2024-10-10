@@ -15,7 +15,7 @@ const OrderModal = ({ isOpen, onClose }) => {
             <label htmlFor="coffeeType" className="block text-sm font-medium text-gray-700">Select Coffee</label>
             <select
               id="coffeeType"
-              className="block w-full mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+              className="block w-full mt-1 border border-gray-800 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
             >
               <option value="espresso">Espresso</option>
               <option value="latte">Latte</option>
@@ -34,7 +34,7 @@ const OrderModal = ({ isOpen, onClose }) => {
             />
           </div>
 
-          <button type="submit" className="w-full py-2 text-white bg-indigo-600 rounded-md">
+          <button type="submit" className="w-full py-2 text-white bg-yellow-600 rounded-md">
             Place Order
           </button>
         </form>
