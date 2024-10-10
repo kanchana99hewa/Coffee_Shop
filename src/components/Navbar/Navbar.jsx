@@ -74,13 +74,7 @@ const Navbar = () => {
                 Order
                 <FaCoffee className="text-xl text-white cursor-pointer drop-shadow-sm" />
               </button>
-              <button
-                onClick={openModal}  // Open modal on button click
-                className="flex items-center gap-3 px-4 py-2 text-white "
-              >
-               Cart
-                <FaCoffee className="text-xl text-white cursor-pointer drop-shadow-sm" />
-              </button>
+              
             </div>
           </div>
 
