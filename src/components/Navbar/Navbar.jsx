@@ -20,6 +20,21 @@ const Menu = [
     name: "About",
     link: "/#about",
   },
+  {
+    id: 4,
+    name: "Home",
+    link: "/#",
+  },
+  {
+    id: 5,
+    name: "Services",
+    link: "/#services",
+  },
+  {
+    id: 6,
+    name: "About",
+    link: "/#about",
+  },
 ];
 
 const Navbar = () => {
