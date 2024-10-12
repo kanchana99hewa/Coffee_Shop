@@ -47,25 +47,26 @@ const Navbar = () => {
             </div>
 
           {/* Navigation Links in the center, shifted further to the right */}
-<div className="flex-grow ml-96"> {/* Changed margin-left to ml-96 */}
-  <ul
-    data-aos="fade-down"
-    data-aos-once="true"
-    data-aos-delay="300"
-    className="flex items-center justify-center gap-4"
-  >
-    {Menu.map((menu) => (
-      <li key={menu.id}>
-        <a
-          href={menu.link}
-          className="inline-block px-4 py-4 text-xl text-white duration-200 hover:text-white/70"
-        >
-          {menu.name}
-        </a>
-      </li>
-    ))}
-  </ul>
-</div>
+          <div className="flex-grow ml-[40rem]"> {/* Changed margin-left to custom value ml-[40rem] */}
+          <ul
+            data-aos="fade-down"
+            data-aos-once="true"
+            data-aos-delay="300"
+            className="flex items-center justify-center gap-4"
+          >
+            {Menu.map((menu) => (
+              <li key={menu.id}>
+                <a
+                  href={menu.link}
+                  className="inline-block px-4 py-4 text-xl text-white duration-200 hover:text-white/70"
+                >
+                  {menu.name}
+                </a>
+              </li>
+            ))} 
+          </ul>
+        </div>
+
 
 
 
