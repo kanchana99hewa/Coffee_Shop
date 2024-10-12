@@ -12,7 +12,7 @@ const Menu = [
   },
   {
     id: 2,
-    name: "Services",
+    name: "Menu",
     link: "/#services",
   },
   {
@@ -22,12 +22,12 @@ const Menu = [
   },
   {
     id: 4,
-    name: "Home",
+    name: "Services ",
     link: "/#",
   },
   {
     id: 5,
-    name: "Services",
+    name: "Visit",
     link: "/#services",
   },
   {
