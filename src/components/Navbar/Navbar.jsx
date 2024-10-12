@@ -38,22 +38,21 @@ const Navbar = () => {
       <div className="mt-4 text-yellow-600 bg-black shadow-md bg-gradient-to-r from-black to-black/90">
         <div className="container py-2">
           <div className="flex items-center justify-between">
-            {/* Logo and Links on the left */}
-            <div className="flex items-center">
-              {/* Logo */}
-              <div className="flex items-center ml-16">
-                <img src={Logo} alt="Logo" className="w-14" />
-                <div className="ml-2 text-2xl font-bold tracking-wider sm:text-3xl moon-dance-font">
-                  Coffee Cafe
-                </div>
+            {/* Logo on the left */}
+            <div className="flex items-center ml-16">
+              <img src={Logo} alt="Logo" className="w-14" />
+              <div className="ml-2 text-2xl font-bold tracking-wider sm:text-3xl moon-dance-font">
+                Coffee Cafe
               </div>
+            </div>
 
-              {/* Navigation Links */}
+            {/* Navigation Links in the center */}
+            <div className="flex-grow">
               <ul
                 data-aos="fade-down"
                 data-aos-once="true"
                 data-aos-delay="300"
-                className="items-center hidden gap-4 ml-10 sm:flex"
+                className="flex items-center justify-center gap-4"
               >
                 {Menu.map((menu) => (
                   <li key={menu.id}>
@@ -68,7 +67,7 @@ const Navbar = () => {
               </ul>
             </div>
 
-            {/* Login, Cart and Order Now on the right */}
+            {/* Login, Cart, and Order Now on the right */}
             <div className="flex items-center gap-4">
               {/* Order Now Button */}
               <button
