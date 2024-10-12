@@ -1,5 +1,4 @@
 import { FaShoppingCart } from 'react-icons/fa';  // Import shopping cart icon
-import { useState } from 'react';
 
 const CartButton = ({ openModal, cartItemsCount }) => {
   return (
