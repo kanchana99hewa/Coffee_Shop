@@ -32,7 +32,7 @@ const Menu = [
   },
   {
     id: 6,
-    name: "About",
+    name: "Beans",
     link: "/#about",
   },
 ];
