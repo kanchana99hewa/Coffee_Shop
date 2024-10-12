@@ -47,7 +47,7 @@ const Navbar = () => {
             </div>
 
            {/* Navigation Links in the center, shifted slightly to the right */}
-          <div className="flex-grow ml-6"> {/* Added margin-left (ml-6) */}
+          <div className="flex-grow ml-80"> {/* Added margin-left (ml-6) */}
             <ul
               data-aos="fade-down"
               data-aos-once="true"
