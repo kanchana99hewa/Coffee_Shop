@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import PropTypes from 'prop-types';
+import { useState } from "react";
 import Coffee4 from "../../assets/coffee4.png";
 import Coffee5 from "../../assets/coffee5.png";
 import Coffee6 from "../../assets/coffee6.png";
@@ -133,6 +134,20 @@ const Products = ({ cart, setCart }) => {
       </div>
     </div>
   );
+};
+
+// Prop types validation
+Products.propTypes = {
+  cart: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+      quantity: PropTypes.number, // Optional if not always needed
+    })
+  ).isRequired,
+  setCart: PropTypes.func.isRequired,
 };
 
 export default Products;

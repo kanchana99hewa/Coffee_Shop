@@ -102,7 +102,45 @@ Payment Method: ${formData.paymentMethod}
                     <h2 className="mb-6 text-xl font-semibold sm:text-2xl">
                         Customer Information
                     </h2>
-                    {/* Form fields... */}
+                    {/* Add your form fields here */}
+                    <input
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleFormChange}
+                        placeholder="Your Name"
+                        className="w-full p-2 mb-4 border rounded"
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleFormChange}
+                        placeholder="Your Phone"
+                        className="w-full p-2 mb-4 border rounded"
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="address"
+                        value={formData.address}
+                        onChange={handleFormChange}
+                        placeholder="Your Address"
+                        className="w-full p-2 mb-4 border rounded"
+                        required
+                    />
+                    <select
+                        name="paymentMethod"
+                        value={formData.paymentMethod}
+                        onChange={handleFormChange}
+                        className="w-full p-2 mb-4 border rounded"
+                        required
+                    >
+                        <option value="">Select Payment Method</option>
+                        <option value="Bank Transfer">Bank Transfer</option>
+                        <option value="Nayapay">Nayapay</option>
+                    </select>
                     <button
                         type="submit"
                         className="px-6 py-3 mt-6 text-white transition duration-300 bg-green-500 rounded-lg shadow-md hover:bg-green-600"
@@ -111,25 +149,42 @@ Payment Method: ${formData.paymentMethod}
                     </button>
                 </form>
             ) : (
-                <>
-                    <div className="max-w-3xl p-6 mx-auto mb-10 bg-white rounded-lg shadow-lg sm:p-8">
-                        <h2 className="mb-6 text-xl font-semibold sm:text-2xl">
-                            Your Cart
-                        </h2>
-                        {cart.length === 0 ? (
-                            <div className="py-10 text-center text-gray-500">
-                                <h3 className="text-lg font-medium sm:text-xl">
-                                    Your cart is empty.
-                                </h3>
-                                <p className="mt-2">
-                                    Add some items to your cart to proceed with checkout.
-                                </p>
+                <div className="max-w-3xl p-6 mx-auto mb-10 bg-white rounded-lg shadow-lg sm:p-8">
+                    <h2 className="mb-6 text-xl font-semibold sm:text-2xl">
+                        Your Cart
+                    </h2>
+                    {cart.length === 0 ? (
+                        <div className="py-10 text-center text-gray-500">
+                            <h3 className="text-lg font-medium sm:text-xl">
+                                Your cart is empty.
+                            </h3>
+                            <p className="mt-2">
+                                Add some items to your cart to proceed with checkout.
+                            </p>
+                        </div>
+                    ) : (
+                        // Cart items rendering...
+                        cart.map(item => (
+                            <div key={item.id} className="flex justify-between p-4 border-b">
+                                <span>{item.name} (x{item.quantity})</span>
+                                <div>
+                                    <button onClick={() => increaseQuantity(item.id)}>+</button>
+                                    <button onClick={() => decreaseQuantity(item.id)}>-</button>
+                                    <button onClick={() => removeFromCart(item.id)}>Remove</button>
+                                </div>
                             </div>
-                        ) : (
-                            // Cart items rendering...
-                        )}
+                        ))
+                    )}
+                    <div className="mt-4 text-lg font-bold">
+                        Total: PKR {total}
                     </div>
-                </>
+                    <button
+                        onClick={handleConfirmOrder}
+                        className="px-6 py-3 mt-6 text-white transition duration-300 bg-blue-500 rounded-lg shadow-md hover:bg-blue-600"
+                    >
+                        Confirm Order
+                    </button>
+                </div>
             )}
         </div>
     );
