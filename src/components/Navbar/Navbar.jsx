@@ -28,7 +28,7 @@ const Menu = [
   {
     id: 5,
     name: "Products",
-    link: "/#services",
+    link: "/#products",
   },
   {
     id: 6,

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import PropTypes from "prop-types"; // Import PropTypes
 import Banklogo from "../../assets/meezan.png";
 import Nayapay from "../../assets/nayapay.png";
