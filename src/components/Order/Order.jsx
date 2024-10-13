@@ -1,17 +1,9 @@
-import { useState } from 'react';
+
 import beansImage from "../../assets/beans.jpg";
-import OrderModal from '../popUp/OrderModal/OrderModal'; // Import OrderModal
+
 
 const Order = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // Modal state
-
-  const openModal = () => {
-    setIsModalOpen(true); // Open modal
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false); // Close modal
-  };
+ 
 
   return (
     <div
@@ -32,15 +24,14 @@ const Order = () => {
 
         {/* Order Now Button triggers the modal */}
         <button
-          onClick={openModal}  // Open modal on click
+          
           className="mt-6 px-8 py-2 bg-[#d2691e] text-white rounded-full text-lg"
         >
           Order Now
         </button>
       </div>
 
-      {/* Render OrderModal and pass props */}
-      <OrderModal isOpen={isModalOpen} onClose={closeModal} />
+ 
     </div>
   );
 };

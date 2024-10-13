@@ -1,8 +1,8 @@
-import { useState } from "react"; // Import useState to handle modal state
+
 import Logo from "../../assets/website/coffee_logo.png";
 import { FaCoffee, FaShoppingCart, FaUser } from "react-icons/fa";
 import './Navbar.css';
-import OrderModal from '../popUp/OrderModal/OrderModal';
+
 
 const Menu = [
   {
@@ -27,7 +27,7 @@ const Menu = [
   },
   {
     id: 5,
-    name: "Visit",
+    name: "Products",
     link: "/#services",
   },
   {
@@ -35,18 +35,12 @@ const Menu = [
     name: "Beans",
     link: "/#about",
   },
+  
+
 ];
 
 const Navbar = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // Modal state management
-
-  const openModal = () => {
-    setIsModalOpen(true); // Open the modal
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false); // Close the modal
-  };
+ 
 
   return (
     <>
@@ -56,9 +50,10 @@ const Navbar = () => {
             {/* Logo on the left */}
             <div className="flex items-center ml-16">
               <img src={Logo} alt="Logo" className="w-14" />
-              <div className="ml-2 text-2xl font-bold tracking-wider sm:text-3xl moon-dance-font">
-                Coffee Cafe
+              <div className="ml-2 text-2xl font-bold tracking-wider sm:text-3xl moon-dance-font whitespace-nowrap">
+              Coffee Cafe
               </div>
+
             </div>
 
           {/* Navigation Links in the center, shifted further to the right */}
@@ -89,18 +84,17 @@ const Navbar = () => {
             <div className="flex items-center gap-4">
               {/* Order Now Button */}
               <button
-                onClick={openModal} // Open modal on button click
+              
                 className="flex items-center gap-3 px-4 py-2 text-white duration-200 bg-yellow-600 rounded-full hover:scale-105"
               >
-                Order
-                <FaCoffee className="text-xl text-white cursor-pointer drop-shadow-sm" />
+                Cart
+                
+              <FaShoppingCart className="text-xl text-white cursor-pointer drop-shadow-sm hover:text-black" />
               </button>
 
-              {/* Cart Icon */}
-              <FaShoppingCart className="text-xl text-white cursor-pointer drop-shadow-sm hover:text-yellow-600" />
+           
 
-              {/* Login Icon */}
-              <FaUser className="text-xl text-white cursor-pointer drop-shadow-sm hover:text-yellow-600" />
+            
             </div>
           </div>
 
@@ -109,8 +103,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Render OrderModal and pass props */}
-      <OrderModal isOpen={isModalOpen} onClose={closeModal} />
+     
     </>
   );
 };

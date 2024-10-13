@@ -1,16 +1,7 @@
-import { useState } from 'react';
-import OrderModal from '../popUp/OrderModal/OrderModal'; // Import OrderModal
+
 
 const MainSection = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // Modal state
 
-  const openModal = () => {
-    setIsModalOpen(true); // Open modal
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false); // Close modal
-  };
 
   return (
     <section className="flex items-center justify-center h-screen text-white bg-black">
@@ -26,7 +17,7 @@ const MainSection = () => {
 
         {/* Button triggers the modal */}
         <button
-          onClick={openModal}  // Open modal on click
+          
           className="px-8 py-3 mt-4 text-xl text-black bg-yellow-600 rounded-full hover:bg-yellow-700"
         >
           Order Now
@@ -41,8 +32,6 @@ const MainSection = () => {
         />
       </div>
 
-      {/* Render OrderModal and pass props */}
-      <OrderModal isOpen={isModalOpen} onClose={closeModal} />
     </section>
   );
 };
