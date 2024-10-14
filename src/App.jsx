@@ -20,6 +20,7 @@ import Packets from './components/Packets/Packets';
 
 
 
+
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -34,6 +35,7 @@ const App = () => {
     <Router>
       <div className="overflow-x-hidden duration-200 bg-white dark:bg-gray-900 dark:text-white">
         <Navbar />
+   
         <MainSection />
         <Services />
         <Banner />
