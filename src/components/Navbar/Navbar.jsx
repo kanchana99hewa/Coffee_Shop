@@ -72,6 +72,14 @@ const Navbar = () => {
             ))} 
           </ul>
         </div>
+            
+        <div>
+        <button
+          className="flex items-center gap-3 px-4 py-2 text-xl text-white" 
+        >
+          Products
+        </button>
+      </div>
 
 
 
