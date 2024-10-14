@@ -1,10 +1,9 @@
-import { useState, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+
 import Logo from "../../assets/website/coffee_logo.png";
-import { FaShoppingCart } from "react-icons/fa";
+import {  FaShoppingCart } from "react-icons/fa";
 import './Navbar.css';
 
-// Menu items
+
 const Menu = [
   {
     id: 1,
@@ -23,39 +22,24 @@ const Menu = [
   },
   {
     id: 4,
-    name: "Services",
+    name: "Services ",
     link: "/#",
   },
-
   {
     id: 5,
+    name: "Products",
+    link: "/#products",
+  },
+  {
+    id: 6,
     name: "Beans",
     link: "/#about",
   },
+  
+
 ];
 
-const Navbar = ({ cart, setCart }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate();
-  const servicesRef = useRef(null);
-
-  // Toggle mobile menu
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  // Navigate to checkout
-  const handleCheckout = () => {
-    navigate("/checkout");
-  };
-
-  // Scroll to services section
-  const scrollToServices = () => {
-    if (servicesRef.current) {
-      servicesRef.current.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false); // Close mobile menu after click
-    }
-  };
+const Navbar = () => {
  
 
   return (
@@ -93,36 +77,24 @@ const Navbar = ({ cart, setCart }) => {
           </ul>
         </div>
 
-                <div>
-                <Link
-                  to="/products"
-                  onClick={toggleMenu}
-                  className="inline-block px-4 py-4 text-lg duration-200 sm-lg:text-xl text-white/70 hover:text-white"
-                >
-                  Products
-                </Link>
-                </div>
+
 
 
             {/* Login, Cart, and Order Now on the right */}
             <div className="flex items-center gap-4">
               {/* Order Now Button */}
               <button
-               onClick={handleCheckout}
+              
                 className="flex items-center gap-3 px-4 py-2 text-white duration-200 bg-yellow-600 rounded-full hover:scale-105"
               >
                 Cart
-                ({cart.length})
+                
               <FaShoppingCart className="text-xl text-white cursor-pointer drop-shadow-sm hover:text-black" />
               </button>
 
+           
+
             
-            </div>
-             {/* Hamburger Menu */}
-             <div className="sm-lg:hidden">
-              <button onClick={toggleMenu} className="text-white">
-                {isMenuOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
-              </button>
             </div>
           </div>
 
