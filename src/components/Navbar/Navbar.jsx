@@ -26,13 +26,9 @@ const Menu = [
     name: "Services",
     link: "/#",
   },
+
   {
     id: 5,
-    name: "Products",
-    link: "/products",
-  },
-  {
-    id: 6,
     name: "Beans",
     link: "/#about",
   },
@@ -97,24 +93,36 @@ const Navbar = ({ cart, setCart }) => {
           </ul>
         </div>
 
-
+                <div>
+                <Link
+                  to="/products"
+                  onClick={toggleMenu}
+                  className="inline-block px-4 py-4 text-lg duration-200 sm-lg:text-xl text-white/70 hover:text-white"
+                >
+                  Products
+                </Link>
+                </div>
 
 
             {/* Login, Cart, and Order Now on the right */}
             <div className="flex items-center gap-4">
               {/* Order Now Button */}
               <button
-              
+               onClick={handleCheckout}
                 className="flex items-center gap-3 px-4 py-2 text-white duration-200 bg-yellow-600 rounded-full hover:scale-105"
               >
                 Cart
-                
+                ({cart.length})
               <FaShoppingCart className="text-xl text-white cursor-pointer drop-shadow-sm hover:text-black" />
               </button>
 
-           
-
             
+            </div>
+             {/* Hamburger Menu */}
+             <div className="sm-lg:hidden">
+              <button onClick={toggleMenu} className="text-white">
+                {isMenuOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
+              </button>
             </div>
           </div>
 
