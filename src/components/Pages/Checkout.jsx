@@ -1,7 +1,7 @@
 import  { useState } from "react";
 import PropTypes from "prop-types"; // Import PropTypes
-import Banklogo from "../../assets/coffee2.png";
-import Nayapay from "../../assets/coffee2.png";
+import cofb from "../../assets/coffee2.png";
+import cup from "../../assets/cup1.png";
 
 const Checkout = ({ cart, setCart }) => {
     const [showForm, setShowForm] = useState(false);
@@ -178,7 +178,7 @@ Payment Method: ${formData.paymentMethod}
                                 <div className="p-4 bg-white border rounded shadow-sm">
                                     <div className="flex flex-col items-center md:flex-row md:space-x-4">
                                         <img
-                                            src={Banklogo}
+                                            src={cofb}
                                             alt="Bank Logo"
                                             className="object-cover w-16 h-16 mb-4 md:mb-0"
                                         />
@@ -193,7 +193,7 @@ Payment Method: ${formData.paymentMethod}
                                 <div className="p-4 bg-white border rounded shadow-sm">
                                     <div className="flex flex-col items-center md:flex-row md:space-x-4">
                                         <img
-                                            src={Nayapay}
+                                            src={cup}
                                             alt="EasyPaisa Logo"
                                             className="object-cover w-16 h-16 mb-4 md:mb-0"
                                         />
