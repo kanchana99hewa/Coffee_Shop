@@ -1,5 +1,5 @@
 
-import { useNavigate } from "react-router-dom";  // Import useNavigate
+import { useNavigate } from "react-router-dom";  
 import Logo from "../../assets/website/coffee_logo.png";
 import { FaShoppingCart } from "react-icons/fa";
 import './Navbar.css';

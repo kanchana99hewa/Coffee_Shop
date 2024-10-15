@@ -1,5 +1,5 @@
-import { BrowserRouter as Router } from 'react-router-dom';
-import { useEffect } from 'react'; 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react'; 
 import Navbar from './components/Navbar/Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -12,16 +12,17 @@ import Footer from './components/Footer/Footer';
 import ServiceSection from './components/ServiceSection/ServiceSection';
 import Shop from './components/Shop/Shop';
 import Order from './components/Order/Order';
-
 import Packets from './components/Packets/Packets';
 
-
-
-
-
-
+// Import Pages
+import Cart from './Pages/Cart';
+import Products from './Pages/Products';
+import Checkout from './Pages/Checkout';
 
 const App = () => {
+  const [cart, setCart] = useState([]);  // Cart state
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
   useEffect(() => {
     AOS.init({
       offset: 100,
@@ -31,26 +32,57 @@ const App = () => {
     });
   }, []);
 
+  const toggleCart = () => {
+    setIsCartOpen(!isCartOpen);
+  };
+
+  const handleCheckout = () => {
+    console.log('Proceed to checkout');
+    // Handle checkout logic here
+  };
+
   return (
     <Router>
       <div className="overflow-x-hidden duration-200 bg-white dark:bg-gray-900 dark:text-white">
-        <Navbar />
-   
-        <MainSection />
-        <Services />
-        <Banner />
-        <ServiceSection />
-        <Shop />
-        <Packets/>
-        <Order />
-  
-        <AppStore />
-        <Testimonials />
-        <Footer />
-        
-        
-        
-        
+        {/* Pass cart and toggleCart to Navbar */}
+        <Navbar cart={cart} toggleCart={toggleCart} />
+
+        {/* Define routes for the app */}
+        <Routes>
+          <Route
+            path="/cart"
+            element={
+              <Cart
+                cart={cart}
+                setCart={setCart}
+                isCartOpen={isCartOpen}
+                toggleCart={toggleCart}
+                handleCheckout={handleCheckout}
+              />
+            }
+          />
+          <Route path="/products" element={<Products setCart={setCart} />} />
+          <Route path="/checkout" element={<Checkout />} />
+          
+          {/* Other routes for the landing page sections */}
+          <Route
+            path="/"
+            element={
+              <>
+                <MainSection />
+                <Services />
+                <Banner />
+                <ServiceSection />
+                <Shop />
+                <Packets />
+                <Order />
+                <AppStore />
+                <Testimonials />
+                <Footer />
+              </>
+            }
+          />
+        </Routes>
       </div>
     </Router>
   );
