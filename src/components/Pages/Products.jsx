@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import { useState } from "react";
-
 import Cof from "../../assets/coffee2.png";
 
 const Products = ({ cart, setCart }) => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [addedProducts, setAddedProducts] = useState(new Set());
 
+  // Categories
   const categories = [
     { id: "all", name: "All" },
     { id: "espresso", name: "Espresso" },
@@ -15,6 +15,7 @@ const Products = ({ cart, setCart }) => {
     { id: "cold-coffee", name: "Cold Coffee" },
   ];
 
+  // Products
   const products = {
     all: [
       { id: 1, name: "Espresso", img: Cof, price: 250 },
@@ -42,30 +43,35 @@ const Products = ({ cart, setCart }) => {
     ],
   };
 
+  // Handle category change
   const handleCategoryChange = (categoryId) => {
     setSelectedCategory(categoryId);
   };
 
+  // Add product to the cart
   const addToCart = (product) => {
     const existingProduct = cart.find(item => item.id === product.id);
     if (existingProduct) {
+      // If product already exists in the cart, increase its quantity
       setCart(cart.map(item =>
         item.id === product.id
           ? { ...item, quantity: item.quantity + 1 }
           : item
       ));
     } else {
+      // Otherwise, add the new product to the cart
       setCart([...cart, { ...product, quantity: 1 }]);
     }
     setAddedProducts(prev => new Set(prev).add(product.id));
   };
 
+  // Get the products for the selected category
   const currentProducts = products[selectedCategory] || [];
 
   return (
     <div className="px-4 py-10 sm:px-6 lg:px-8">
       <div className="container mx-auto">
-        {/* Categories section */}
+        {/* Categories Section */}
         <div className="mb-10 text-center">
           <div className="flex flex-wrap justify-center gap-2">
             {categories.map(category => (
@@ -84,13 +90,14 @@ const Products = ({ cart, setCart }) => {
           </div>
         </div>
 
-        {/* Products Card section */}
+        {/* Products Section */}
         <div className="mb-20 text-center">
           <h1 className="text-2xl font-bold text-gray-800 sm:text-3xl md:text-4xl">
             {categories.find(cat => cat.id === selectedCategory)?.name || "Products"}
           </h1>
         </div>
 
+        {/* Product Cards */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 place-items-center">
           {currentProducts.length > 0 ? (
             currentProducts.map((product) => (
