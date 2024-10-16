@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/website/coffee_logo.png";
 import { FaShoppingCart } from "react-icons/fa";
 import './Navbar.css';
+import { Link } from "react-router-dom";
 
 const Menu = [
   {
@@ -75,11 +76,11 @@ const Navbar = () => {
 
             {/* Products Button */}
             <div>
-              <button
-                className="flex items-center gap-3 px-4 py-2 text-xl text-white"
-              >
-                Products
-              </button>
+              <Link to="/products">
+                <button className="flex items-center gap-3 px-4 py-2 text-xl text-white">
+                  Products
+                </button>
+              </Link>
             </div>
 
             {/* Login, Cart, and Order Now on the right */}
