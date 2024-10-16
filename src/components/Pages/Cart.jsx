@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const Cart = ({ cart, isCartOpen, toggleCart, handleCheckout, setCart }) => {
   const removeFromCart = (productId) => {
@@ -19,13 +19,13 @@ const Cart = ({ cart, isCartOpen, toggleCart, handleCheckout, setCart }) => {
         <div className="fixed p-4 text-black bg-white rounded shadow-lg top-16 right-5 w-80">
           <h2 className="mb-4 text-xl font-bold">Cart</h2>
           {cart.length === 0 ? (
-            <p className="">Your cart is empty.</p>
+            <p>Your cart is empty.</p>
           ) : (
             <ul>
-              {cart.map((item, index) => (
-                <li key={index} className="flex justify-between mb-2">
+              {cart.map((item) => (
+                <li key={item.id} className="flex justify-between mb-2">
                   <div>
-                    {item.name} - ${item.price.toFixed(2)} x {item.quantity}
+                    {item.name} - PKR {item.price.toFixed(2)} x {item.quantity}
                   </div>
                   <div>
                     <button
@@ -36,7 +36,7 @@ const Cart = ({ cart, isCartOpen, toggleCart, handleCheckout, setCart }) => {
                     </button>
                     <button
                       onClick={() => removeFromCart(item.id)}
-                      className="px-2 py-1 bg-red-500 rounded text-"
+                      className="px-2 py-1 text-white bg-red-500 rounded"
                     >
                       Remove
                     </button>
@@ -55,6 +55,22 @@ const Cart = ({ cart, isCartOpen, toggleCart, handleCheckout, setCart }) => {
       )}
     </>
   );
+};
+
+// Prop types validation
+Cart.propTypes = {
+  cart: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+      quantity: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+  isCartOpen: PropTypes.bool.isRequired,
+  toggleCart: PropTypes.func.isRequired, // Assuming you will use this function to toggle cart visibility
+  handleCheckout: PropTypes.func.isRequired,
+  setCart: PropTypes.func.isRequired,
 };
 
 export default Cart;
