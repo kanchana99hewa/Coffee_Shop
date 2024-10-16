@@ -1,6 +1,3 @@
-
-
-
 import PropTypes from 'prop-types'; // For prop validation
 
 const Cart = ({ cart, setCart }) => {
@@ -11,7 +8,7 @@ const Cart = ({ cart, setCart }) => {
   };
 
   return (
-    <div className="container p-4 mx-auto">
+    <div className="container p-4 mx-auto bg-yellow-600"> {/* Added bg-yellow-100 */}
       <h1 className="text-2xl font-bold">Your Cart</h1>
       {cart.length === 0 ? (
         <p>Your cart is empty.</p>
