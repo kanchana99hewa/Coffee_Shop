@@ -61,10 +61,10 @@ const App = () => {
               />
             }
           />
-          <Route path="/products" element={<Products setCart={setCart} />} />
-          <Route path="/checkout" element={<Checkout />} />
-          
-          {/* Other routes for the landing page sections */}
+          <Route path="/products" element={<Products cart={cart} setCart={setCart} />} />
+        <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
+        <Route path="/checkout" element={<Checkout cart={cart} setCart={setCart} />} />
+       
           <Route
             path="/"
             element={
