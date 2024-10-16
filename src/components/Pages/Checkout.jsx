@@ -1,7 +1,6 @@
 import  { useState } from "react";
 import PropTypes from "prop-types"; // Import PropTypes
-import cofb from "../../assets/coffee2.png";
-import cup from "../../assets/cup1.png";
+
 
 const Checkout = ({ cart, setCart }) => {
     const [showForm, setShowForm] = useState(false);
@@ -177,11 +176,7 @@ Payment Method: ${formData.paymentMethod}
                             <div className="space-y-4 md:space-y-6">
                                 <div className="p-4 bg-white border rounded shadow-sm">
                                     <div className="flex flex-col items-center md:flex-row md:space-x-4">
-                                        <img
-                                            src={cofb}
-                                            alt="Bank Logo"
-                                            className="object-cover w-16 h-16 mb-4 md:mb-0"
-                                        />
+                                      
                                         <div className="text-center md:text-left">
                                             <p className="font-semibold">Bank: Meezan Bank Limited</p>
                                             <p>Account Name: MUHAMMAD ARSALAN AFTAB</p>
@@ -192,11 +187,7 @@ Payment Method: ${formData.paymentMethod}
                                 </div>
                                 <div className="p-4 bg-white border rounded shadow-sm">
                                     <div className="flex flex-col items-center md:flex-row md:space-x-4">
-                                        <img
-                                            src={cup}
-                                            alt="EasyPaisa Logo"
-                                            className="object-cover w-16 h-16 mb-4 md:mb-0"
-                                        />
+                                        
                                         <div className="text-center md:text-left">
                                             <p className="font-semibold">Bank: NAYA PAY</p>
                                             <p>Account Name: MUHAMMAD ARSALAN AFTAB</p>

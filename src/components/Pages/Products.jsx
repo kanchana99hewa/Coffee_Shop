@@ -1,12 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from "react";
-import Coffee4 from "../../assets/coffee4.png";
-import Coffee5 from "../../assets/coffee5.png";
-import Coffee6 from "../../assets/coffee6.png";
-import Coffee7 from "../../assets/coffee7.png";
-import Coffee8 from "../../assets/coffee8.png";
-import Coffee9 from "../../assets/coffee9.png";
-import Coffee10 from "../../assets/coffee10.png";
+
+import Cof from "../../assets/coffee2.png";
 
 const Products = ({ cart, setCart }) => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -22,28 +17,28 @@ const Products = ({ cart, setCart }) => {
 
   const products = {
     all: [
-      { id: 1, name: "Espresso", img: Coffee4, price: 250 },
-      { id: 2, name: "Americano", img: Coffee5, price: 350 },
-      { id: 3, name: "Cappuccino", img: Coffee6, price: 400 },
-      { id: 4, name: "Cold Coffee", img: Coffee7, price: 850 },
-      { id: 5, name: "Ice-cream Coffee", img: Coffee8, price: 1100 },
-      { id: 6, name: "Milk Cold Coffee", img: Coffee9, price: 700 },
-      { id: 7, name: "Black Coffee", img: Coffee10, price: 300 },
+      { id: 1, name: "Espresso", img: Cof, price: 250 },
+      { id: 2, name: "Americano", img: Cof, price: 350 },
+      { id: 3, name: "Cappuccino", img: Cof, price: 400 },
+      { id: 4, name: "Cold Coffee", img: Cof, price: 850 },
+      { id: 5, name: "Ice-cream Coffee", img: Cof, price: 1100 },
+      { id: 6, name: "Milk Cold Coffee", img: Cof, price: 700 },
+      { id: 7, name: "Black Coffee", img: Cof, price: 300 },
     ],
     espresso: [
-      { id: 1, name: "Espresso", img: Coffee4, price: 250 },
+      { id: 1, name: "Espresso", img: Cof, price: 250 },
     ],
     americano: [
-      { id: 2, name: "Americano", img: Coffee5, price: 350 },
-      { id: 7, name: "Black Coffee", img: Coffee10, price: 300 },
+      { id: 2, name: "Americano", img: Cof, price: 350 },
+      { id: 7, name: "Black Coffee", img: Cof, price: 300 },
     ],
     cappuccino: [
-      { id: 3, name: "Cappuccino", img: Coffee6, price: 400 },
+      { id: 3, name: "Cappuccino", img: Cof, price: 400 },
     ],
     "cold-coffee": [
-      { id: 4, name: "Cold Coffee", img: Coffee7, price: 850 },
-      { id: 5, name: "Ice-cream Coffee", img: Coffee8, price: 1100 },
-      { id: 6, name: "Milk Cold Coffee", img: Coffee9, price: 700 },
+      { id: 4, name: "Cold Coffee", img: Cof, price: 850 },
+      { id: 5, name: "Ice-cream Coffee", img: Cof, price: 1100 },
+      { id: 6, name: "Milk Cold Coffee", img: Cof, price: 700 },
     ],
   };
 
