@@ -1,4 +1,4 @@
-// src/components/Cart.js
+
 
 
 import PropTypes from 'prop-types'; // For prop validation
