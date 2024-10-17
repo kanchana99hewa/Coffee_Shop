@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'; // For prop validation
+import { Link } from "react-router-dom";
 
 const Cart = ({ cart, setCart }) => {
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -36,7 +37,17 @@ const Cart = ({ cart, setCart }) => {
           <div className="mt-4">
             <h2 className="text-xl font-bold">Total: PKR {total}</h2>
           </div>
-          {/* Optionally, add a Checkout button here */}
+           
+           {/* Checkout Button with Link to /checkout */}
+          <div>
+         
+          <Link to="/checkout">
+            <button className="w-full px-4 py-2 mt-4 text-white bg-green-500 rounded">
+              Checkout
+            </button>
+          </Link>
+          </div>
+          
         </div>
       )}
     </div>
