@@ -8,7 +8,7 @@ const Cart = ({ cart, setCart }) => {
   };
 
   return (
-    <div className="flex-grow p-4 bg-yellow-600"> {/* Flex grow ensures the cart takes up full available space */}
+    <div className="p-4 mx-auto bg-black max-w-none">
 
       <h1 className="text-2xl font-bold">Your Cart</h1>
       {cart.length === 0 ? (
