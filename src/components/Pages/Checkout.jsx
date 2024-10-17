@@ -241,18 +241,19 @@ Payment Method: ${formData.paymentMethod}
                                             </div>
                                         </div>
                                         <div className="flex gap-2 mt-4 sm:mt-0">
-                                            <button
-                                                onClick={() => increaseQuantity(item.id)}
-                                                className="px-2 py-1 text-white transition duration-300 bg-black rounded-lg shadow-sm hover:bg-gray-800"
-                                            >
-                                                +
-                                            </button>
-                                            <button
-                                                onClick={() => decreaseQuantity(item.id)}
-                                                className="px-2 py-1 text-white transition duration-300 bg-yellow-600 rounded-lg shadow-sm hover:bg-yellow-600"
-                                            >
-                                                -
-                                            </button>
+                                        <button
+                                        onClick={() => increaseQuantity(item.id)}
+                                        className="w-10 h-10 px-2 py-1 text-white transition duration-300 bg-black rounded-lg shadow-sm hover:bg-gray-800"
+                                        >
+                                        +
+                                        </button>
+                                        <button
+                                        onClick={() => decreaseQuantity(item.id)}
+                                        className="w-10 h-10 px-2 py-1 text-white transition duration-300 bg-yellow-600 rounded-lg shadow-sm hover:bg-yellow-600"
+                                        >
+                                        -
+                                        </button>
+
                                             <button
                                                 onClick={() => removeFromCart(item.id)}
                                                 className="px-2 py-1 text-white transition duration-300 bg-red-700 rounded-lg shadow-sm hover:bg-red-600"
@@ -273,7 +274,7 @@ Payment Method: ${formData.paymentMethod}
                             </div>
                             <button
                                 onClick={handleConfirmOrder}
-                                className="px-4 py-2 mt-4 text-white transition duration-300 bg-green-500 rounded-lg shadow-md hover:bg-green-600"
+                                className="px-4 py-2 mt-4 text-white transition duration-300 bg-green-800 rounded-lg shadow-md hover:bg-green-600"
                             >
                                 Confirm Order
                             </button>
