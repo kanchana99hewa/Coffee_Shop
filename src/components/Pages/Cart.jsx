@@ -42,7 +42,7 @@ const Cart = ({ cart, setCart }) => {
           <div>
          
           <Link to="/checkout">
-            <button className="w-full px-4 py-2 mt-4 text-white bg-green-500 rounded">
+            <button className="w-1/2 px-4 py-2 mt-4 text-white bg-green-500 rounded">
               Checkout
             </button>
           </Link>
