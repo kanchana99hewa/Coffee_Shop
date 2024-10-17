@@ -243,19 +243,19 @@ Payment Method: ${formData.paymentMethod}
                                         <div className="flex gap-2 mt-4 sm:mt-0">
                                             <button
                                                 onClick={() => increaseQuantity(item.id)}
-                                                className="px-2 py-1 text-white transition duration-300 bg-blue-500 rounded-lg shadow-sm hover:bg-blue-600"
+                                                className="px-2 py-1 text-white transition duration-300 bg-black rounded-lg shadow-sm hover:bg-gray-800"
                                             >
                                                 +
                                             </button>
                                             <button
                                                 onClick={() => decreaseQuantity(item.id)}
-                                                className="px-2 py-1 text-white transition duration-300 bg-yellow-500 rounded-lg shadow-sm hover:bg-yellow-600"
+                                                className="px-2 py-1 text-white transition duration-300 bg-yellow-600 rounded-lg shadow-sm hover:bg-yellow-600"
                                             >
                                                 -
                                             </button>
                                             <button
                                                 onClick={() => removeFromCart(item.id)}
-                                                className="px-2 py-1 text-white transition duration-300 bg-red-500 rounded-lg shadow-sm hover:bg-red-600"
+                                                className="px-2 py-1 text-white transition duration-300 bg-red-700 rounded-lg shadow-sm hover:bg-red-600"
                                             >
                                                 Remove
                                             </button>
