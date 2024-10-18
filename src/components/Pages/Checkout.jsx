@@ -1,5 +1,6 @@
-
+import { useState } from "react";
 import PropTypes from "prop-types";
+import ConfirmOrder from "./ConfirmOrder";  // Import the new component
 
 const Checkout = ({ cart, setCart }) => {
     const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -20,8 +21,7 @@ const Checkout = ({ cart, setCart }) => {
         setCart(
             cart.map((item) =>
                 item.id === productId && item.quantity > 1
-                    ? { ...item, quantity: item.quantity - 1 }
-                    : item
+                    ? { ...item, quantity: item.quantity - 1 } : item
             )
         );
     };
@@ -86,16 +86,9 @@ const Checkout = ({ cart, setCart }) => {
                                 </li>
                             ))}
                         </ul>
-                        <div className="mt-6 text-right">
-                            <h2 className="text-xl font-bold sm:text-2xl">
-                                Total: PKR {total}
-                            </h2>
-                        </div>
-                        <button
-                            className="px-4 py-2 mt-4 text-white transition duration-300 bg-green-800 rounded-lg shadow-md hover:bg-green-600"
-                        >
-                            Confirm Order
-                        </button>
+
+                        {/* Use the ConfirmOrder component here */}
+                        <ConfirmOrder total={total} />
                     </>
                 )}
             </div>
