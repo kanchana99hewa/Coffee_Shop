@@ -1,9 +1,10 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
-import ConfirmOrder from "./ConfirmOrder";  // Import the new component
+import { useNavigate } from "react-router-dom";  
+
 
 const Checkout = ({ cart, setCart }) => {
     const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const navigate = useNavigate();  // Initialize useNavigate
 
     const removeFromCart = (productId) => {
         setCart(cart.filter((item) => item.id !== productId));
@@ -24,6 +25,12 @@ const Checkout = ({ cart, setCart }) => {
                     ? { ...item, quantity: item.quantity - 1 } : item
             )
         );
+    };
+
+    // Function to handle order confirmation
+    const handleConfirmOrder = () => {
+        // Navigate to the confirm-order page when the button is clicked
+        navigate("/ConfirmOrder");
     };
 
     return (
@@ -87,8 +94,18 @@ const Checkout = ({ cart, setCart }) => {
                             ))}
                         </ul>
 
-                        {/* Use the ConfirmOrder component here */}
-                        <ConfirmOrder total={total} />
+                        {/* ConfirmOrder Button */}
+                        <div className="mt-6 text-right">
+                            <h2 className="text-xl font-bold sm:text-2xl">
+                                Total: PKR {total}
+                            </h2>
+                            <button
+                                onClick={handleConfirmOrder}  // Call handleConfirmOrder when clicked
+                                className="px-4 py-2 mt-4 text-white transition duration-300 bg-green-800 rounded-lg shadow-md hover:bg-green-600"
+                            >
+                                Confirm Order
+                            </button>
+                        </div>
                     </>
                 )}
             </div>
