@@ -110,11 +110,11 @@ Payment Method: ${formData.paymentMethod}
                     />
                 </div>
 
-                {/* Payment Method Selection */}
+               {/* Payment Method Selection */}
                 <div className="mb-4">
                     <label className="block mb-2 text-base font-medium text-black sm:text-lg">Payment Method</label>
                     <div className="flex flex-col gap-4">
-                        <label className="flex items-center gap-2">
+                        <label className="flex items-center gap-2 text-black">
                             <input
                                 type="radio"
                                 name="paymentMethod"
@@ -125,7 +125,7 @@ Payment Method: ${formData.paymentMethod}
                             />
                             Cash on Delivery
                         </label>
-                        <label className="flex items-center gap-2">
+                        <label className="flex items-center gap-2 text-black">
                             <input
                                 type="radio"
                                 name="paymentMethod"
