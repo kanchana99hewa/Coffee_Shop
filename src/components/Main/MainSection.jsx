@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 const MainSection = () => {
 
@@ -16,12 +16,14 @@ const MainSection = () => {
         </h2>
 
         {/* Button triggers the modal */}
-        <button
-          
-          className="px-8 py-3 mt-4 text-xl text-black bg-yellow-600 rounded-full hover:bg-yellow-700"
-        >
-          Order Now
-        </button>
+        <Link to="/products">
+  <button
+    className="px-8 py-3 mt-4 text-xl text-black bg-yellow-600 rounded-full hover:bg-yellow-700"
+  >
+    Order Now
+  </button>
+</Link>
+
       </div>
 
       <div className="ml-16">
