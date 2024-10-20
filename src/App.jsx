@@ -18,6 +18,8 @@ import Packets from './components/Packets/Packets';
 import Cart from './components/Pages/Cart';          // Updated path
 import Products from './components/Pages/Products';  // Updated path
 import Checkout from './components/Pages/Checkout';  // Updated path
+import ConfirmOrder from './components/Pages/ConfirmOrder';  // Updated path
+
 
 const App = () => {
   const [cart, setCart] = useState([]);  // Cart state
@@ -64,7 +66,8 @@ const App = () => {
           <Route path="/products" element={<Products cart={cart} setCart={setCart} />} />
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
         <Route path="/checkout" element={<Checkout cart={cart} setCart={setCart} />} />
-       
+        <Route path="/ConfirmOrder" element={<ConfirmOrder cart={cart} setCart={setCart} />} />
+     
           <Route
             path="/"
             element={
