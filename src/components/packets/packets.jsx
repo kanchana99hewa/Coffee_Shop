@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { useState } from 'react';
 import pac from "../../assets/packets.png"; 
@@ -77,8 +79,10 @@ const Packets = () => {
                 </div>
 
                 <div>
-                  <i className="fas fa-shopping-cart text-[#e2b451]"></i>
-                </div>
+                <Link to="/products">
+                  <i className="fas fa-shopping-cart text-[#e2b451] cursor-pointer"></i>
+                </Link>
+              </div>
                 
               </div>
             </div>

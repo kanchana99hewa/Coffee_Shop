@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 import beansImage from "../../assets/beans.jpg";
 
 
@@ -23,12 +23,11 @@ const Order = () => {
         </p>
 
         {/* Order Now Button triggers the modal */}
-        <button
-          
-          className="mt-6 px-8 py-2 bg-[#d2691e] text-white rounded-full text-lg"
-        >
+        <button className="mt-6 px-8 py-2 bg-[#d2691e] text-white rounded-full text-lg">
+        <Link to="/products" className="text-white">
           Order Now
-        </button>
+        </Link>
+      </button>
       </div>
 
  
