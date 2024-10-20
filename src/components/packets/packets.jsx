@@ -1,21 +1,27 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { useState } from 'react';
 import pac from "../../assets/packets.png"; 
+import pac1 from "../../assets/pac 1.png"; 
+
+import pac3 from "../../assets/pac 3.png"; 
+import pac4 from "../../assets/pac 4.png"; 
+import pac5 from "../../assets/pac 5.png"; 
+
 
 const Packets = () => {
   const coffeeData = [
     { id: 1, name: "Arabica", roast: "Dark Roast", imgSrc: pac },
-    { id: 2, name: "House Blend", roast: "Dark Roast", imgSrc: pac },
+    { id: 2, name: "House Blend", roast: "Dark Roast", imgSrc: pac1 },
     { id: 3, name: "Robusta", roast: "Dark Roast", imgSrc: pac },
-    { id: 4, name: "Espresso", roast: "Dark Roast", imgSrc: pac },
-    { id: 5, name: "Colombian", roast: "Medium Roast", imgSrc: pac },
-    { id: 6, name: "French Roast", roast: "Dark Roast", imgSrc: pac },
+    { id: 4, name: "Espresso", roast: "Dark Roast", imgSrc: pac3 },
+    { id: 5, name: "Colombian", roast: "Medium Roast", imgSrc: pac4 },
+    { id: 6, name: "French Roast", roast: "Dark Roast", imgSrc: pac5 },
     { id: 7, name: "Italian Roast", roast: "Dark Roast", imgSrc: pac },
-    { id: 8, name: "House Blend", roast: "Dark Roast", imgSrc: pac },
+    { id: 8, name: "House Blend", roast: "Dark Roast", imgSrc: pac1 },
     { id: 9, name: "Robusta", roast: "Dark Roast", imgSrc: pac },
-    { id: 10, name: "Espresso", roast: "Dark Roast", imgSrc: pac },
-    { id: 11, name: "Colombian", roast: "Medium Roast", imgSrc: pac },
-    { id: 12, name: "French Roast", roast: "Dark Roast", imgSrc: pac },
+    { id: 10, name: "Espresso", roast: "Dark Roast", imgSrc: pac3 },
+    { id: 11, name: "Colombian", roast: "Medium Roast", imgSrc: pac4 },
+    { id: 12, name: "French Roast", roast: "Dark Roast", imgSrc: pac5 },
     { id: 13, name: "Italian Roast", roast: "Dark Roast", imgSrc: pac },
   ];
 
