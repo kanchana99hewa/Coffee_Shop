@@ -69,8 +69,8 @@ const Products = ({ cart, setCart }) => {
   const currentProducts = products[selectedCategory] || [];
 
   return (
-    <div className="px-4 py-10 sm:px-6 lg:px-8">
-      <div className="container mx-auto">
+    <div className="min-h-screen py-10 bg-black">
+      <div className="container px-4 mx-auto sm:px-6 lg:px-8">
         {/* Categories Section */}
         <div className="mb-10 text-center">
           <div className="flex flex-wrap justify-center gap-2">
@@ -80,8 +80,8 @@ const Products = ({ cart, setCart }) => {
                 onClick={() => handleCategoryChange(category.id)}
                 className={`py-2 px-4 rounded-full text-sm sm:text-base transition duration-300 ease-in-out ${
                   selectedCategory === category.id
-                    ? "bg-blue-600 text-white shadow-lg"
-                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                    ? "bg-yellow-600 text-white shadow-lg"
+                    : "bg-white text-black hover:bg-gray-300"
                 }`}
               >
                 {category.name}
@@ -92,7 +92,7 @@ const Products = ({ cart, setCart }) => {
 
         {/* Products Section */}
         <div className="mb-20 text-center">
-          <h1 className="text-2xl font-bold text-gray-800 sm:text-3xl md:text-4xl">
+          <h1 className="text-2xl font-bold text-yellow-600 sm:text-3xl md:text-4xl">
             {categories.find(cat => cat.id === selectedCategory)?.name || "Products"}
           </h1>
         </div>
@@ -103,7 +103,7 @@ const Products = ({ cart, setCart }) => {
             currentProducts.map((product) => (
               <div
                 key={product.id}
-                className="relative max-w-xs transition duration-300 ease-in-out transform bg-white shadow-lg rounded-2xl hover:bg-slate-200 hover:text-black group md:max-w-sm hover:-translate-y-1 hover:shadow-2xl"
+                className="relative max-w-xs text-black transition duration-300 ease-in-out transform bg-white shadow-lg rounded-2xl hover:bg-yellow-100 group md:max-w-sm hover:-translate-y-1 hover:shadow-2xl"
               >
                 <div className="relative h-48 md:h-56">
                   <img
@@ -114,14 +114,14 @@ const Products = ({ cart, setCart }) => {
                 </div>
                 <div className="p-4 text-center">
                   <h1 className="text-lg font-bold sm:text-xl">{product.name}</h1>
-                  <p className="text-sm font-bold text-gray-500">PKR {Math.floor(product.price)}</p>
+                  <p className="text-sm font-bold text-gray-700">LKR {Math.floor(product.price)}</p>
 
                   <button
                     onClick={() => addToCart(product)}
                     className={`mt-4 py-2 px-4 rounded-full text-sm transition duration-300 ease-in-out ${
                       addedProducts.has(product.id)
                         ? "bg-green-500 text-white shadow-md hover:bg-green-600"
-                        : "bg-blue-500 text-white shadow-md hover:bg-blue-600"
+                        : "bg-yellow-600 text-white shadow-md hover:bg-black"
                     }`}
                   >
                     {addedProducts.has(product.id) ? "Added" : "Add to Cart"}
@@ -146,7 +146,7 @@ Products.propTypes = {
       name: PropTypes.string.isRequired,
       img: PropTypes.string.isRequired,
       price: PropTypes.number.isRequired,
-      quantity: PropTypes.number, // Optional if not always needed
+      quantity: PropTypes.number, 
     })
   ).isRequired,
   setCart: PropTypes.func.isRequired,
