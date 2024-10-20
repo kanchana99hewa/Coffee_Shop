@@ -67,10 +67,14 @@ Payment Method: ${formData.paymentMethod}
                     {errorMessage}
                 </div>
             )}
+
+            {/* Form for Placing the Order */}
             <form onSubmit={handleFormSubmit} className="max-w-lg p-6 mx-auto mb-10 bg-white rounded-lg shadow-lg sm:p-8">
                 <h2 className="mb-6 text-xl font-semibold sm:text-2xl">Customer Information</h2>
+
+                {/* Name Input */}
                 <div className="mb-4">
-                    <label className="block mb-2 text-base font-medium sm:text-lg">Name</label>
+                    <label className="block mb-2 text-base font-medium text-black sm:text-lg">Name</label>
                     <input
                         type="text"
                         name="name"
@@ -80,8 +84,10 @@ Payment Method: ${formData.paymentMethod}
                         required
                     />
                 </div>
+
+                {/* Phone Number Input */}
                 <div className="mb-4">
-                    <label className="block mb-2 text-base font-medium sm:text-lg">Phone Number</label>
+                    <label className="block mb-2 text-base font-medium text-black sm:text-lg">Phone Number</label>
                     <input
                         type="tel"
                         name="phone"
@@ -91,8 +97,10 @@ Payment Method: ${formData.paymentMethod}
                         required
                     />
                 </div>
+
+                {/* Address Input */}
                 <div className="mb-4">
-                    <label className="block mb-2 text-base font-medium sm:text-lg">Address</label>
+                    <label className="block mb-2 text-base font-medium text-black sm:text-lg">Address</label>
                     <textarea
                         name="address"
                         value={formData.address}
@@ -101,8 +109,10 @@ Payment Method: ${formData.paymentMethod}
                         required
                     />
                 </div>
+
+                {/* Payment Method Selection */}
                 <div className="mb-4">
-                    <label className="block mb-2 text-base font-medium sm:text-lg">Payment Method</label>
+                    <label className="block mb-2 text-base font-medium text-black sm:text-lg">Payment Method</label>
                     <div className="flex flex-col gap-4">
                         <label className="flex items-center gap-2">
                             <input
@@ -128,6 +138,8 @@ Payment Method: ${formData.paymentMethod}
                         </label>
                     </div>
                 </div>
+
+                {/* Submit Button */}
                 <button type="submit" className="w-full px-4 py-2 mt-4 text-white bg-green-800 rounded-lg shadow-md hover:bg-green-600">
                     Place Order
                 </button>
