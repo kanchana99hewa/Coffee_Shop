@@ -29,7 +29,7 @@ const Packets = () => {
   const maxIndex = coffeeData.length;
 
   const itemWidth = 240; // width of each item (including margins)
-  const step = itemWidth * 0.5; // Move by half the width for gradual movement
+  const step = itemWidth * 0.9; // Move by half the width for gradual movement
 
   // Move left
   const handlePrevious = () => {
@@ -58,7 +58,7 @@ const Packets = () => {
           {coffeeData.map((coffee) => (
             <div
               key={coffee.id}
-              className="bg-[#241713] w-[200px] rounded-lg p-5 relative mx-5"
+              className="bg-[#1f1010] w-[200px] rounded-lg p-5 relative mx-5"
               style={{ minWidth: '200px' }} // Ensure all items have the same width
             >
               <div className="relative">
@@ -67,20 +67,19 @@ const Packets = () => {
                   alt={coffee.name}
                   className="h-[150px] w-[150px] mx-auto"
                 />
-                <div className="absolute top-2 left-2">
-                  <i className="fas fa-info-circle text-[#e9e6d9]"></i>
-                </div>
+               
               </div>
 
               <div className="flex items-center justify-between mt-4">
                 <div className="text-left">
                   <h3 className="text-[#f5deb3] font-bold">{coffee.name}</h3>
-                  <p className="text-[#8d6e63]">{coffee.roast}</p>
+                  <p className="text-[#9b7c71]">{coffee.roast}</p>
                 </div>
 
                 <div>
-                  <i className="fas fa-shopping-cart text-[#f5deb3]"></i>
+                  <i className="fas fa-shopping-cart text-[#e2b451]"></i>
                 </div>
+                
               </div>
             </div>
           ))}
@@ -89,19 +88,21 @@ const Packets = () => {
 
       {/* Navigation buttons */}
       <div className="flex justify-center mt-6">
-        <button
-          onClick={handlePrevious}
-          className="bg-[#c4a484] p-3 rounded-full mx-2"
-        >
-          <i className="fas fa-chevron-left"></i>
-        </button>
-        <button
-          onClick={handleNext}
-          className="bg-[#c4a484] p-3 rounded-full mx-2"
-        >
-          <i className="fas fa-chevron-right"></i>
-        </button>
-      </div>
+      <button
+        onClick={handlePrevious}
+        className="bg-[#d4aa34] w-10 h-10 rounded-full mx-2 flex items-center justify-center"
+      >
+        <i className="fas fa-chevron-left"></i>
+      </button>
+      <button
+        onClick={handleNext}
+        className="bg-[#d4aa34] w-10 h-10 rounded-full mx-2 flex items-center justify-center"
+      >
+        <i className="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+      
     </div>
   );
 };
