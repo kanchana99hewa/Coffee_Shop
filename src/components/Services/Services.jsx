@@ -1,10 +1,12 @@
-import Img2 from "../../assets/coffee2.png";
+import Img from "../../assets/espre.png";
+
+import Img4 from "../../assets/espre4.png";
 
 
 const ServicesData = [
   {
     id: 1,
-    img: Img2,
+    img: Img,
     name: "Espresso",
     description:
       "A classic Italian coffee brewed by forcing steam through ground coffee beans.",
@@ -12,7 +14,7 @@ const ServicesData = [
   },
   {
     id: 2,
-    img: Img2,
+    img: Img4,
     name: "Americano",
     description:
       "Espresso diluted with hot water, giving it a similar strength to drip coffee.",
@@ -20,7 +22,7 @@ const ServicesData = [
   },
   {
     id: 3,
-    img: Img2,
+    img: Img,
     name: "Cappuccino",
     description:
       "Espresso topped with steamed milk foam, often served with cinnamon or chocolate.",
@@ -28,7 +30,7 @@ const ServicesData = [
   },
   {
     id: 4,
-    img: Img2,
+    img: Img4,
     name: "Latte",
     description:
       "A smooth blend of espresso and steamed milk, topped with a thin layer of foam.",
@@ -36,7 +38,7 @@ const ServicesData = [
   },
   {
     id: 5,
-    img: Img2,
+    img: Img,
     name: "Macchiato",
     description:
       "Espresso marked with a dollop of steamed milk, a perfect balance of strong and smooth.",
@@ -44,7 +46,7 @@ const ServicesData = [
   },
   {
     id: 6,
-    img: Img2,
+    img: Img4,
     name: "Mocha",
     description:
       "A chocolatey twist on espresso with steamed milk and a shot of chocolate syrup.",

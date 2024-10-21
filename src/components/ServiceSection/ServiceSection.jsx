@@ -40,7 +40,7 @@ const ServiceSection = () => {
           {/* Heading section */}
           <div className="mb-20 text-center">
             <h1 className="text-4xl font-bold text-black font-cursive">
-              Best Coffee For You
+              Our Services
             </h1>
             
           </div>
