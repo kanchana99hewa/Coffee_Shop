@@ -1,14 +1,14 @@
 import Slider from "react-slick";
-import Img1 from "../../assets/coffee2.png"; // Import different images
-import Img2 from "../../assets/coffee2.png";
-import Img3 from "../../assets/coffee2.png";
+ // Import different images
+import Img2 from "../../assets/person.jpg";
+import Img3 from "../../assets/girl.jpg";
 
 const TestimonialData = [
   {
     id: 1,
     name: "Dilshad",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: Img1, // Unique image
+    img: Img3, // Unique image
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const TestimonialData = [
     id: 4,
     name: "Satya Narayan",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/103/103", // Example external image
+    img: Img2, // Example external image
   },
 ];
 
@@ -38,7 +38,7 @@ const Testimonials = () => {
     speed: 500, // Speed of the transition between slides
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000, // Decreased from 2000ms to 1000ms (1 second)
+    autoplaySpeed: 2000, // Decreased from 2000ms to 1000ms (1 second)
     cssEase: "linear",
     pauseOnHover: true,
     pauseOnFocus: true,
