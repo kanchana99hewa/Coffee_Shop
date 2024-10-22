@@ -38,7 +38,7 @@ const Testimonials = () => {
     speed: 500, // Speed of the transition between slides
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000, // Decreased from 2000ms to 1000ms (1 second)
+    autoplaySpeed: 1500, // Decreased from 2000ms to 1000ms (1 second)
     cssEase: "linear",
     pauseOnHover: true,
     pauseOnFocus: true,
