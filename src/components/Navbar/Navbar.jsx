@@ -29,7 +29,7 @@ const Menu = [
   {
     id: 5,
     name: "Beans",
-    link: "/#packets",
+    link: "/#Packets",
   },
 ];
 

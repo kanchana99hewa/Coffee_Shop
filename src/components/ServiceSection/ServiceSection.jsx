@@ -30,7 +30,7 @@ const ServiceSection = () => {
   return (
     <>
       <span id="ServiceSection"></span>
-      <div className="py-10 text-center bg-gray-300">
+      <div className="py-10 text-center bg-yellow-50 ">
         {/* Gray background for the section */}
         <div className="container mx-auto">
           {/* Heading section */}

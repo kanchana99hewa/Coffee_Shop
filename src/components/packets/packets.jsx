@@ -46,10 +46,10 @@ const Packets = () => {
 
   return (
     
-    <div className="bg-[#ffffff] py-10 overflow-hidden">
+    <div className="py-10 overflow-hidden bg-yellow-50 ">
           
       <div className="mb-8 text-center">
-        <h2 className="text-4xl text-[#000000] font-cursive">Recommended</h2>
+      <h1 className="text-4xl font-bold text-black font-cursive">Recommended</h1>
       </div>
 
       {/* Coffee item list */}

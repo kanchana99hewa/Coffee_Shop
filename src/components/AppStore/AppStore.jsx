@@ -4,7 +4,7 @@ const backgroundStyle = {
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-  backgroundColor: "white",  
+  backgroundColor: "#fef3c7",  // Equivalent to bg-yellow-50 in Tailwind
   height: "45vh",  // Adjusted to take 45% of the viewport height
   width: "100%",
 };
@@ -12,7 +12,7 @@ const backgroundStyle = {
 const AppStore = () => {
   return (
     <>
-      <div className="py-4" style={backgroundStyle}> {/* Reduced padding */}
+      <div className="py-4" style={backgroundStyle} > {/* Reduced padding */}
         <div className="container">
           <div className="grid items-center grid-cols-1 gap-4 sm:grid-cols-2">
             <div

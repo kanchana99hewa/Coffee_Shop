@@ -56,7 +56,7 @@ const Services = () => {
   return (
     <>
       <span id="services"></span>
-      <div className="py-10 text-center bg-white">
+      <div className="py-10 text-center bg-yellow-50 ">
         {/* Container */}
         <div className="container mx-auto">
           {/* Main Heading */}
