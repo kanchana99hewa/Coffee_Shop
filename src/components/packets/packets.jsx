@@ -45,7 +45,9 @@ const Packets = () => {
   };
 
   return (
+    
     <div className="bg-[#ffffff] py-10 overflow-hidden">
+          
       <div className="mb-8 text-center">
         <h2 className="text-4xl text-[#000000] font-cursive">Recommended</h2>
       </div>

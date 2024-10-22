@@ -24,12 +24,12 @@ const Menu = [
   {
     id: 4,
     name: "Services",
-    link: "/#",
+    link: "/#ServiceSection",
   },
   {
     id: 5,
     name: "Beans",
-    link: "/#beans",
+    link: "/#packets",
   },
 ];
 
