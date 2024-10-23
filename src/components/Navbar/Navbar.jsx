@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="mt-4 text-yellow-600 bg-black shadow-md bg-gradient-to-r from-black to-black/90">
+      <div className="text-yellow-600 bg-black shadow-md  bg-gradient-to-r from-black to-black/90">
         <div className="container py-2">
           <div className="flex items-center justify-between">
             {/* Logo on the left */}
