@@ -12,7 +12,7 @@ import Footer from './components/Footer/Footer';
 import ServiceSection from './components/ServiceSection/ServiceSection';
 import Shop from './components/Shop/Shop';
 import Order from './components/Order/Order';
-import Packets from './components/Packets/Packets';
+import Packets from './components/packets/packets';
 
 // Import Pages
 import Cart from './components/Pages/Cart';          // Updated path

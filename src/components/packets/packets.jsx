@@ -29,19 +29,19 @@ const Packets = () => {
   const [translateX, setTranslateX] = useState(0);
   const maxIndex = coffeeData.length;
 
-  const itemWidth = 240; // width of each item (including margins)
-  const step = itemWidth * 0.9; // Move by half the width for gradual movement
+  const itemWidth = 240; 
+  const step = itemWidth * 0.9; 
 
   // Move left
   const handlePrevious = () => {
-    setTranslateX((prev) => Math.min(prev + step, 0)); // Ensure we don't go past the start
+    setTranslateX((prev) => Math.min(prev + step, 0)); 
   };
 
   // Move right
   const handleNext = () => {
     setTranslateX((prev) => 
       Math.max(prev - step, -(itemWidth * (maxIndex - 5)))
-    ); // Ensure we don't go past the end
+    );
   };
 
   return (
@@ -62,7 +62,7 @@ const Packets = () => {
             <div
               key={coffee.id}
               className="bg-[#1f1010] w-[200px] rounded-lg p-5 relative mx-5"
-              style={{ minWidth: '200px' }} // Ensure all items have the same width
+              style={{ minWidth: '200px' }} 
             >
               <div className="relative">
                 <img

@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import Img from "../../assets/espre.png";
 import Img4 from "../../assets/espre4.png";
+import Footer from '../Footer/Footer';
 
 
 const Products = ({ cart, setCart }) => {
@@ -137,6 +138,10 @@ const Products = ({ cart, setCart }) => {
           )}
         </div>
       </div>
+       {/* Footer Section */}
+       <div className=" mt-28">
+        <Footer />
+      </div>
     </div>
   );
 };
@@ -154,5 +159,6 @@ Products.propTypes = {
   ).isRequired,
   setCart: PropTypes.func.isRequired,
 };
+
 
 export default Products;
