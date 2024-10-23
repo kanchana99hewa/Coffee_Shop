@@ -1,5 +1,7 @@
-import PropTypes from 'prop-types'; // For prop validation
+import PropTypes from 'prop-types'; 
 import { Link } from "react-router-dom";
+import Footer from '../Footer/Footer';
+
 
 const Cart = ({ cart, setCart }) => {
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -9,8 +11,8 @@ const Cart = ({ cart, setCart }) => {
   };
 
   return (
-    <div className="min-h-screen bg-black"> {/* Outer container with bg-black */}
-      <div className="max-w-xl p-4 mx-auto text-white bg-black "> {/* Inner container with padding and text color */}
+    <div className="flex flex-col min-h-screen bg-black"> {/* Outer container with bg-black */}
+       <div className="flex-grow max-w-xl p-4 mx-auto text-white bg-black "> {/* Inner container with padding and text color */}
         <div className="flex justify-center">
           <h1 className="text-2xl font-bold text-yellow-400">Your Cart</h1>
         </div>
@@ -50,6 +52,10 @@ const Cart = ({ cart, setCart }) => {
             </div>
           </div>
         )}
+      </div>
+       {/* Footer Section */}
+       <div>
+        <Footer />
       </div>
     </div>
   );
