@@ -73,8 +73,8 @@ const Products = ({ cart, setCart }) => {
   const currentProducts = products[selectedCategory] || [];
 
   return (
-    <div className="min-h-screen py-10 bg-black">
-      <div className="container px-4 mx-auto sm:px-6 lg:px-8">
+    <div className="bg-black ">
+           <div className="container px-4 mx-auto sm:px-6 lg:px-8">
         {/* Categories Section */}
         <div className="mb-10 text-center">
           <div className="flex flex-wrap justify-center gap-2">
@@ -139,9 +139,10 @@ const Products = ({ cart, setCart }) => {
         </div>
       </div>
        {/* Footer Section */}
-       <div className=" mt-28">
+       <div className="mt-28 h-[100px]">
         <Footer />
       </div>
+
     </div>
   );
 };
