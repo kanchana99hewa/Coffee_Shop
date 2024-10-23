@@ -47,7 +47,7 @@ const Packets = () => {
   return (
     
     <div className="py-10 overflow-hidden bg-yellow-50 ">
-          
+          <span id="Packets"></span>
       <div className="mb-8 text-center">
       <h1 className="text-4xl font-bold text-black font-cursive">Recommended</h1>
       </div>
