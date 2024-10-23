@@ -95,7 +95,7 @@ const Products = ({ cart, setCart }) => {
 
         {/* Products Section */}
         <div className="mb-20 text-center">
-          <h1 className="text-2xl font-bold text-yellow-600 sm:text-3xl md:text-4xl">
+          <h1 className="text-2xl font-bold text-yellow-200 sm:text-3xl md:text-4xl">
             {categories.find(cat => cat.id === selectedCategory)?.name || "Products"}
           </h1>
         </div>

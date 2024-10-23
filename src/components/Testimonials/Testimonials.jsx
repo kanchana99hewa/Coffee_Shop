@@ -6,25 +6,25 @@ import Img3 from "../../assets/girl.jpg";
 const TestimonialData = [
   {
     id: 1,
-    name: "Dilshad",
+    name: "Dilshani",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
     img: Img3, // Unique image
   },
   {
     id: 2,
-    name: "Sabir Ali",
+    name: "Kasun",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
     img: Img2, // Unique image
   },
   {
     id: 3,
-    name: "Dipankar Kumar",
+    name: "Amila",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
     img: Img3, // Unique image
   },
   {
     id: 4,
-    name: "Satya Narayan",
+    name: "Shenal",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
     img: Img2, // Example external image
   },
@@ -99,7 +99,7 @@ const Testimonials = () => {
                   <div className="flex flex-col items-center gap-4">
                     <div className="space-y-3">
                       <p className="text-xs text-gray-100">{data.text}</p>
-                      <h1 className="text-xl font-bold text-yellow-500 font-cursive2">
+                      <h1 className="text-xl font-bold text-yellow-100 font-cursive2">
                         {data.name}
                       </h1>
                     </div>

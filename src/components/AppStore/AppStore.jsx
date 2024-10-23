@@ -4,7 +4,7 @@ const backgroundStyle = {
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-  backgroundColor: "#fef3c7",  // Equivalent to bg-yellow-50 in Tailwind
+  backgroundColor: "#fef8e0",  // Equivalent to bg-yellow-50 in Tailwind
   height: "45vh",  // Adjusted to take 45% of the viewport height
   width: "100%",
 };

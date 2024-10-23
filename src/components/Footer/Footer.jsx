@@ -10,12 +10,20 @@ const FooterLinks = [
     link: "/#about",
   },
   {
-    title: "Contact",
-    link: "/#contact",
+    title: "Menu",
+    link: "/#Services",
   },
   {
-    title: "Blog",
-    link: "/#blog",
+    title: "Services",
+    link: "/#ServiceSection",
+  },
+  {
+    title: "Beans",
+    link: "/#Packets",
+  },
+  {
+    title: "Products",
+    link: "/#products",
   },
 ];
 
