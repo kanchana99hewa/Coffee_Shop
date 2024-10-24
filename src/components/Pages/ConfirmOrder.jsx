@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 
+
 const ConfirmOrder = ({ total, cart, setCart }) => {
     const [formData, setFormData] = useState({
         name: "",
@@ -146,7 +147,9 @@ Payment Method: ${formData.paymentMethod}
                     </button>
                 </form>
             </div>
+           
         </div>
+      
     );
 };
 

@@ -34,7 +34,7 @@ const Checkout = ({ cart, setCart }) => {
     };
 
     return (
-        <div className="container px-4 py-10 sm:px-6 lg:px-8">
+        <div className="px-4 py-10 bg-black sm:px-6 lg:px-8">
             <div className="max-w-3xl p-6 mx-auto mb-10 bg-white rounded-lg shadow-lg sm:p-8">
                 <h2 className="mb-6 text-xl font-semibold sm:text-2xl">Your Cart</h2>
                 {cart.length === 0 ? (
