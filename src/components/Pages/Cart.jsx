@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import Footer from '../Footer/Footer';
 
-
 const Cart = ({ cart, setCart }) => {
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
@@ -12,7 +11,7 @@ const Cart = ({ cart, setCart }) => {
 
   return (
     <div className="flex flex-col min-h-screen bg-black"> {/* Outer container with bg-black */}
-       <div className="flex-grow max-w-xl p-4 mx-auto text-white bg-black "> {/* Inner container with padding and text color */}
+      <div className="flex-grow max-w-xl p-4 mx-auto text-white bg-black "> {/* Inner container with padding and text color */}
         <div className="flex justify-center">
           <h1 className="text-2xl font-bold text-yellow-400">Your Cart</h1>
         </div>
@@ -22,7 +21,7 @@ const Cart = ({ cart, setCart }) => {
           <div>
             <ul className="divide-y divide-gray-200">
               {cart.map((item) => (
-                <li key={item.id} className="flex items-center justify-between py-4">
+                <li key={item.id} className="flex items-center justify-between px-10 py-7"> {/* Increased padding here */}
                   <div>
                     <h2 className="text-lg font-semibold">{item.name}</h2>
                     <p>
@@ -31,7 +30,7 @@ const Cart = ({ cart, setCart }) => {
                   </div>
                   <button
                     onClick={() => removeFromCart(item.id)}
-                    className="px-4 py-2 text-white bg-red-700 rounded hover:bg-red-600"
+                    className="px-6 py-2 ml-20 text-white bg-red-700 rounded hover:bg-red-600" // Adjusted margin-left for more space between button and item description
                   >
                     Remove
                   </button>
@@ -53,8 +52,8 @@ const Cart = ({ cart, setCart }) => {
           </div>
         )}
       </div>
-       {/* Footer Section */}
-       <div>
+      {/* Footer Section */}
+      <div>
         <Footer />
       </div>
     </div>
