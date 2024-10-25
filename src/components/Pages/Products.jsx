@@ -29,9 +29,11 @@ const Products = ({ cart, setCart }) => {
       { id: 5, name: "Ice-cream Coffee", img: Img, price: 1100 },
       { id: 6, name: "Milk Cold Coffee", img:Img4, price: 700 },
       { id: 7, name: "Black Coffee", img: Img, price: 300 },
+      { id: 8, name: "Latte", img: Img4, price: 400 },
     ],
     espresso: [
       { id: 1, name: "Espresso", img: Img, price: 250 },
+      { id: 8, name: "Latte", img: Img4, price: 400 },
     ],
     americano: [
       { id: 2, name: "Americano", img: Img4, price: 350 },
