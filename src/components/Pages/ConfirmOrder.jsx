@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
-
+import Footer from '../Footer/Footer';
 
 const ConfirmOrder = ({ total, cart, setCart }) => {
     const [formData, setFormData] = useState({
@@ -57,8 +57,8 @@ Payment Method: ${formData.paymentMethod}
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-black">
-            <div className="container px-4 py-10 sm:px-6 lg:px-8">
+        <div className="overflow-hidden bg-black ">
+            <div className="px-6 py-10 sm:px-6 lg:px-8">
                 {successMessage && (
                     <div className="p-4 mb-6 text-center text-green-700 bg-green-100 rounded">
                         {successMessage}
@@ -82,7 +82,7 @@ Payment Method: ${formData.paymentMethod}
                             name="name"
                             value={formData.name}
                             onChange={handleFormChange}
-                            className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+                            className="w-full p-3 text-black border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
                             required
                         />
                     </div>
@@ -95,7 +95,7 @@ Payment Method: ${formData.paymentMethod}
                             name="phone"
                             value={formData.phone}
                             onChange={handleFormChange}
-                            className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+                            className="w-full p-3 text-black border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
                             required
                         />
                     </div>
@@ -107,7 +107,7 @@ Payment Method: ${formData.paymentMethod}
                             name="address"
                             value={formData.address}
                             onChange={handleFormChange}
-                            className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+                            className="w-full p-3 text-black border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
                             required
                         />
                     </div>
@@ -147,7 +147,10 @@ Payment Method: ${formData.paymentMethod}
                     </button>
                 </form>
             </div>
-           
+            {/* Footer Section */}
+            <div className="mt-28 h-[260px]">
+                <Footer />
+            </div>
         </div>
       
     );

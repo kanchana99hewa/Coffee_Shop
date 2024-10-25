@@ -53,7 +53,7 @@ const Cart = ({ cart, setCart }) => {
         )}
       </div>
       {/* Footer Section */}
-      <div>
+      <div className="mt-28 ">
         <Footer />
       </div>
     </div>
